@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    position: fixed;
+    width: 90%;
+}
+
+.header_logo img {
+    width: 4rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu {
+    font-size: 0.875rem;
+}
+
+.elipsis {
+    display: flex;
+    gap: .2rem;
+}
+
+.elipsis div {
+    width: .2rem;
+    height: .2rem;
+    background: #ccc;
+    border-radius: 50%;
+}

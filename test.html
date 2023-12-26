@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiral Galaxy</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.137.5/build/three.min.js"></script>
+    <script>
+        // Scene setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 5;
+        const renderer = new THREE.WebGLRenderer({
+            antialias: true
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Galaxy arm generation
+        const arms = [];
+        const armCount = 2; // Number of arms
+        const armSegments = 100; // Number of segments per arm
+        let armWidth = 0.2; // Arm width
+        let armSpacing = 0.5; // Spacing between arms
+
+        for (let i = 0; i < armCount; i++) {
+            const armGeometry = new THREE.BufferGeometry();
+            const positions = [];
+
+            for (let j = 0; j < armSegments; j++) {
+                const theta = j * Math.PI * 2 / armSegments + i * armSpacing; // Angle along spiral
+                const radius = Math.pow(j / armSegments, 0.5); // Radial distance based on segment position
+                const x = radius * Math.cos(theta);
+                const y = radius * Math.sin(theta);
+
+                positions.push(x, y, 0); // Add point to positions array
+            }
+
+            const positionAttribute = new THREE.Float32BufferAttribute(positions, 3);
+            armGeometry.setAttribute("position", positionAttribute);
+
+            const armMaterial = new THREE.LineBasicMaterial({
+                color: 0xeeeeee
+            });
+
+            const armMesh = new THREE.Line(armGeometry, armMaterial);
+            scene.add(armMesh);
+            arms.push(armMesh);
+        }
+
+        // Galaxy core
+        const coreGeometry = new THREE.SphereGeometry(0.5, 32, 32);
+        const coreMaterial = new THREE.MeshBasicMaterial({
+            color: 0xffffff
+        });
+        const coreMesh = new THREE.Mesh(coreGeometry, coreMaterial);
+        scene.add(coreMesh);
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+
+            for (const arm of arms) {
+                arm.rotation.z += 0.01; // Rotate arms around Z axis
+            }
+
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // ... your three.js code goes here ...
+    </script>
+</body>
+
+</html>

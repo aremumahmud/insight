@@ -1,0 +1,76 @@
+.footer {
+    margin-top: 18rem;
+    height: 70vh;
+    position: relative;
+    background-color: #090c15;
+    top: 100%;
+    padding: .3rem;
+    padding-left: 1rem;
+}
+
+.footer .top p {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer .contact {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    gap: 10px;
+}
+
+.footer .info_contact {
+    display: flex;
+    flex-direction: column;
+    gap: -40px;
+}
+
+.footer .info_contact p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .contact .image {
+    height: 3.5rem;
+    width: 3.5rem;
+    background: hsla(0, 0%, 100%, .6);
+    border-radius: 50%;
+}
+
+.footer .contact .subtitle {
+    color: hsla(0, 0%, 100%, .6);
+    font-size: .875rem;
+    font-weight: 100;
+    line-height: 2;
+}
+
+.footer .contact .title_ {
+    font-size: 1.275rem;
+    font-weight: 100;
+    line-height: 2;
+}
+
+.footer .pages {
+    padding: .3rem;
+    font-size: .875rem;
+}
+
+.footer .pages p {
+    padding-left: .5rem;
+}
+
+.footer .pages ul {
+    color: hsla(0, 0%, 100%, .6);
+    padding-left: .5em;
+    list-style-type: none;
+}
+
+.footer .pages ul li {
+    padding: .2rem;
+}
+
+.footer .pages ul li:hover {
+    text-decoration: underline;
+}
