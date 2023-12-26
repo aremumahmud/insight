@@ -5,6 +5,7 @@
     padding: 1.3rem;
     position: fixed;
     width: 90%;
+    z-index: 1;
 }
 
 .header_logo img {

@@ -1,5 +1,5 @@
 .parallax-container {
-    height: 50vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,12 +9,12 @@
 .info {
     position: absolute;
     z-index: 1;
-    top: 80%;
-    left: 10%;
+    top: 66%;
+    left: 0%;
 }
 
 .info .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     /* font-weight: 500; */
     padding: .6rem;
     padding-bottom: 0;
@@ -40,7 +40,7 @@
 
 .parallax-image {
     width: 90%;
-    height: 97%;
+    height: 90%;
     /* Replace with your image URL */
     background-size: cover;
     will-change: transform;
