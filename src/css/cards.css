@@ -1,5 +1,5 @@
 .parallax-container {
-    height: 50vh;
+    height: 53vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +48,6 @@
     background-repeat: no-repeat;
     border-radius: 40px;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.267);
-margin-bottom: 10px
+
     /* Adjust the color and opacity as needed */
 }
