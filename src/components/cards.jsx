@@ -17,26 +17,18 @@ const ParallaxImage = ({tags , title , image}) => {
     };
   }, []);
 
-   React.useEffect(() => {
-    // Configure the scroll reveal animation
-    ScrollReveal().reveal('.parallax-image', {
-      delay: 200,
-      origin: 'bottom',
-      distance: '20px',
-      duration: 800,
-      scale: 1.2,
-    });
-  }, []);
+  //  React.useEffect(() => {
+  //   // Configure the scroll reveal animation
+  //   ScrollReveal().reveal('.parallax-image', {
+  //     delay: 200,
+  //     origin: 'bottom',
+  //     duration: 800,
+  //     scale: 1.2,
+  //   });
+  // }, []);
   return (
     <div className="parallax-container">
-      <animated.div
-        className="parallax-image"
-        style={{
-          transform: offset.interpolate((o) => `translateY(${o * 0.1}px)`),
-          backgroundImage: `url(${image})`
-        }}
-      >
-       <div className="info">
+      <div className="info">
         <div className="title">{title|| ''}</div>
         <div className="tags">
           {
@@ -44,6 +36,14 @@ const ParallaxImage = ({tags , title , image}) => {
           }
         </div>
       </div>
+      <animated.div
+        className="parallax-image"
+        style={{
+          transform: offset.interpolate((o) => `translateY(${o * 0.1}px)`),
+          backgroundImage: `url(${image})`
+        }}
+      >
+       
       </animated.div>
     </div>
   );
