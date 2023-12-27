@@ -19,6 +19,7 @@ import Automobile from './components/automobile'
 import Moto from './components/moto'
 import Pricing from './components/pricing'
 import CheckTrip from './components/Checktrip'
+import ParticleFall from './components/test'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <Spiral />
+      {/* <ParticleFall /> */}
       <Nav isopen={isopen}/>
       <Header isopen={isopen} setnav={setnav} />
       {/* <FirstAid /> */}
