@@ -1,0 +1,48 @@
+.nav_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101116;
+    flex-direction: column;
+}
+
+.nav_bar ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.nav_bar ul li {
+    padding: .9rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.nav_bar .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav_bar .contact .image {
+    height: 3.5rem;
+    width: 3.5rem;
+    background: hsla(0, 0%, 100%, .6);
+    border-radius: 50%;
+}
+
+.nav_bar .contact .subtitle {
+    color: hsla(0, 0%, 100%, .6);
+    font-size: .875rem;
+    font-weight: 100;
+}
+
+.nav_bar .contact .title_ {
+    font-size: 1.275rem;
+    font-weight: 100;
+}

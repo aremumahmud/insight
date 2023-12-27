@@ -1,19 +1,22 @@
 import headerLogo from '../images/logo.png'
 import '../css/header.css'
 
-function Header (){
+function Header ({isopen, setnav}){
     return  (
         <div className="header">
             <div className="header_logo">
                <img src={headerLogo} alt="" />
             </div>
-            <div className="nav">
+            <div className="nav" onClick={()=>{setnav(nav => !nav)}}>
                 <div className="menu">menu</div>
-                <div className="elipsis">
+                {
+                    isopen ? <div>X</div>:<div className="elipsis">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
+                }
+                
             </div>
         </div>
     )
