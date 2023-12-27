@@ -23,8 +23,8 @@ function App() {
       <Spiral />
       <Nav isopen={isopen}/>
       <Header isopen={isopen} setnav={setnav} />
-      <FirstAid />
-      {/* <Home /> */}
+      {/* <FirstAid /> */}
+      <Home />
       <br /><br />
       <div>
         <Footer />
