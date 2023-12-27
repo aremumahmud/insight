@@ -5,7 +5,7 @@ function Header ({isopen, setnav}){
     return  (
         <div className="header">
             <div className="header_logo">
-               <img src={headerLogo} alt="" />
+              <a href='/'><img src={headerLogo} alt="" /></a> 
             </div>
             <div className="nav" onClick={()=>{setnav(nav => !nav)}}>
                 <div className="menu">menu</div>
