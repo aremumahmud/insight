@@ -1,0 +1,7 @@
+.team {
+    position: relative;
+    z-index: inherit;
+    padding: 0 1.875rem;
+    /* padding-bottom: 6.25rem;
+    padding-top: 6.25rem; */
+}

@@ -12,7 +12,7 @@ function Nav({isopen}){
                 <li><a href='/moto'>Moto</a></li>
                 <li><a href='/pricing'>Pricing</a></li>
                 <li><a href='#'>Contact Us</a></li>
-                <li><a href='#'>About Us</a></li>
+                <li><a href='/about'>About Us</a></li>
                 <li><a href='#'>Registration</a></li>
             </ul>
             <br /><br /><br />

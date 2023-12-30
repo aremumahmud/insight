@@ -20,6 +20,7 @@ import Moto from './components/moto'
 import Pricing from './components/pricing'
 import CheckTrip from './components/Checktrip'
 import ParticleFall from './components/test'
+import AboutUs from './components/about_us';
 
 function App() {
 
@@ -36,7 +37,7 @@ function App() {
         <Routes>
           <Route path={'/'} element={   <Home />} />
           <Route path={'/vku'} element={   <VKU />} />
-          <Route path={'/automobile'} element={   <Automobile />} />
+          <Route path={'/about'} element={   <AboutUs />} />
           <Route path={'/moto'} element={   <Moto />} />
           <Route path={'/pricing'} element={   <Pricing />} />
           <Route path={'/checktrip'} element={   <CheckTrip />} />
