@@ -29,9 +29,10 @@
 .bullet_entails {
     padding: 10px;
     line-height: 1.5;
-}
+    font-size: .825rem;}
 
 .bullet_entails ul {
     padding-left: 0;
     list-style-type: circle;
+    font-size: .825rem;
 }

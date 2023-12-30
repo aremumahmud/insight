@@ -12,7 +12,6 @@ function Team({image , name , attributes}){
                 <div className="contacts">
                 <FaEnvelope />
                     <FaPhone />
-                    
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@ function AboutUs(){
           <Article bottom={true}  title={'Super Driving Instructor For Super Learner Drivers .'} content={['We have set the goal of making driver training possible for everyone, regardless of their financial situation']}/>
           <Article top={true} title={'Our Creative Team .'} content={[`The Star driving school only works with selected driving instructors and instructors. With the driving instructors and instructors, we make sure that everyone is specialized in their area and very strong. This is how we ensure high quality and can continue to offer our students a high standard. With a relaxed, collegial and humorous atmosphere, you can quickly reach your goal with a lot of fun and humor.`]} />
           {
-            team_data.map(team=> <Team name={team.name} attributes={team.attributes} image={team.imagee} />)
+            team_data.map(team=> <Team name={team.name} attributes={team.attributes} image={team.image} />)
           }
           
           </>

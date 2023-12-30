@@ -12,13 +12,13 @@
 }
 
 .article .article_content {
-    font-size: 1.125rem;
+    font-size: .825rem;
     color: hsla(0, 0%, 100%, .6);
     line-height: 2;
 }
 
 .title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.2;
 }
