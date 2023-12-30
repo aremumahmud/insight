@@ -49,7 +49,7 @@ function Home(){
                     data.map(item=> <ParallaxImage title={item.title} tags={item.tags} image={item.image} />)
                 }
                 </div>
-            </Parallax>
+                <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />            </Parallax>
         
         </ParallaxProvider>
     )

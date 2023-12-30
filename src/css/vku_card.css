@@ -1,0 +1,53 @@
+    .vku_card {
+        background: hsla(0, 0%, 100%, .6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: .5rem;
+        text-align: center;
+        width: 90%;
+        border-radius: 40px;
+        height: fit-content
+    }
+    
+    .vku_card_wrap {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vku_image {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        background-color: #090c15;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .vku_entails {
+        padding: 10px;
+        line-height: 1.5;
+        /* color: black*/
+    }
+    
+    .button1 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        background-color: #fff;
+        width: fit-content;
+        color: #000;
+        border-radius: 40px;
+    }
+    
+    .button1:hover {
+        color: #090c15 !important;
+        border: 1px solid #090c15 !important;
+        background: transparent !important;
+    }

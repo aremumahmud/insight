@@ -17,7 +17,7 @@ function Jumbo({image , text}){
     }, []);
 
   return (
-    <animated.div
+    <div
          className="jumbo-image"
         style={{
           transform: offset.interpolate((o) => `translateY(${o * 0.1}px)`),
@@ -27,10 +27,9 @@ function Jumbo({image , text}){
       
        <div className="jumbo_content">
         <p className='jumbo_title'>{text}</p>
-        <p className='jum_cont'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Consectetur quibusdam, vero ducimus vel omnis neque.</p>
+        
        </div>
-      </animated.div>
+      </div>
   )
 
 }

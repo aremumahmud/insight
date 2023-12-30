@@ -1,0 +1,12 @@
+.video_frame {
+    height: 50vh;
+    width: 90%;
+    border-radius: 40px;
+}
+
+.frame_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

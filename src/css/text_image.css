@@ -1,0 +1,35 @@
+.text_image {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+}
+
+.text_image .text {
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.text_image .text_title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: .9rem;
+}
+
+.text_image .image {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.text_image .image img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.image_fix {
+    display: flex;
+    justify-content: center;
+}
+
+.image_fix img {
+    width: 95% !important;
+}
