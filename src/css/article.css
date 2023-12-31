@@ -60,3 +60,7 @@
 .warning {
     color: red
 }
+
+ol {
+    padding-left: 0%;
+}

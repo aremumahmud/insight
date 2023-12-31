@@ -1,0 +1,30 @@
+.contact_form input,
+textarea {
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 24px;
+    background-color: hsla(0, 0%, 100%, .6);
+    color: #fff;
+    outline: none;
+}
+
+.contact_form textarea::placeholder {
+    color: #fff;
+}
+
+.contact_form input::placeholder {
+    color: #fff;
+}
+
+.contact_form .button {
+    display: flex;
+    float: right;
+    padding: 1rem;
+}
+
+.contact_form .button:hover {
+    border: 1px solid hsla(0, 0%, 100%, .6) !important;
+    color: hsla(0, 0%, 100%, .6) !important;
+    background-color: transparent;
+}

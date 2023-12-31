@@ -11,7 +11,7 @@ function Nav({isopen}){
                 <li><a href='/checktrip'>Check trip</a></li>
                 <li><a href='/moto'>Moto</a></li>
                 <li><a href='/pricing'>Pricing</a></li>
-                <li><a href='#'>Contact Us</a></li>
+                <li><a href='/contact'>Contact Us</a></li>
                 <li><a href='/about'>About Us</a></li>
                 <li><a href='#'>Registration</a></li>
             </ul>
