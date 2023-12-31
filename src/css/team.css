@@ -2,8 +2,8 @@
     position: relative;
     z-index: inherit;
     padding: 0 1.875rem;
-    /* padding-bottom: 6.25rem;
-    padding-top: 6.25rem; */
+    padding-bottom: 5.25rem;
+    /* padding-top: 6.25rem; */
 }
 
 .team .team_image {
@@ -24,4 +24,18 @@
 .team .team_image img {
     width: 100%;
     height: 100%;
+}
+
+.team_contacts {
+    font-size: .825rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.team_contacts a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
 }
