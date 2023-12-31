@@ -1,5 +1,5 @@
 import Jumbo from "./jumbo"
-import card from '../images/a560de56786d9472f3aada67e829e3f4.jpg'
+import card from '../images/banner.jpg'
 import Article from "./article"
 import Team from "./team"
 
