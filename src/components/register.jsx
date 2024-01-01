@@ -82,14 +82,14 @@ export default function Register() {
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-gray-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Sign in
+                  Create account
                 </button>
               </div>
             </form>
   
             <p className="mt-10 text-center text-sm text-gray-500">
               Already a member?{' '}
-              <a href="#" className="font-semibold leading-6 text-gray-600 hover:text-indigo-500">
+              <a href="/signin" className="font-semibold leading-6 text-gray-600 hover:text-indigo-500">
                Sign in to your account
               </a>
             </p>

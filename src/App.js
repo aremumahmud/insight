@@ -23,6 +23,7 @@ import ParticleFall from './components/test'
 import AboutUs from './components/about_us';
 import ContactUs from './components/contacts';
 import Register from './components/register';
+import SignIn from './components/Signin';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           <Route path={'/'} element={   <Home />} />
           <Route path={'/vku'} element={   <VKU />} />
           <Route path={'/register'} element={   <Register />} />
+          <Route path={'/signin'} element={   <SignIn />} />
           <Route path={'/about'} element={   <AboutUs />} />
           <Route path={'/moto'} element={   <Moto />} />
           <Route path={'/contact'} element={   <ContactUs />} />
