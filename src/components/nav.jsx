@@ -7,13 +7,12 @@ function Nav({isopen}){
             <ul>
                 <li><a href='/emergency_responders'>Emergency Responders</a></li>
                 <li><a href='/vku'>VKU</a></li>
-                
-                <li><a href='/checktrip'>Check trip</a></li>
                 <li><a href='/moto'>Moto</a></li>
                 <li><a href='/pricing'>Pricing</a></li>
                 <li><a href='/contact'>Contact Us</a></li>
                 <li><a href='/about'>About Us</a></li>
-                <li><a href='#'>Registration</a></li>
+                <li><a href='/trial_lesson'>Request A Trial Lesson</a></li>
+                <li><a href='/register'>Registration</a></li>
             </ul>
             <br /><br /><br />
             <div className="contact">

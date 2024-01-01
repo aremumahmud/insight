@@ -22,6 +22,7 @@ import CheckTrip from './components/Checktrip'
 import ParticleFall from './components/test'
 import AboutUs from './components/about_us';
 import ContactUs from './components/contacts';
+import Register from './components/register';
 
 function App() {
 
@@ -38,11 +39,12 @@ function App() {
         <Routes>
           <Route path={'/'} element={   <Home />} />
           <Route path={'/vku'} element={   <VKU />} />
+          <Route path={'/register'} element={   <Register />} />
           <Route path={'/about'} element={   <AboutUs />} />
           <Route path={'/moto'} element={   <Moto />} />
           <Route path={'/contact'} element={   <ContactUs />} />
           <Route path={'/pricing'} element={   <Pricing />} />
-          <Route path={'/checktrip'} element={   <CheckTrip />} />
+          <Route path={'/trial_lesson'} element={   <CheckTrip />} />
           <Route path={'/emergency_responders'} element={   <FirstAid />} />
         </Routes>
       </Router>
