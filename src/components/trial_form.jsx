@@ -1,7 +1,19 @@
+import { useEffect } from 'react';
 import '../css/trial_form.css'
-
+ import ScrollReveal from 'scrollreveal';
 
 function TrialForm(){
+   
+      useEffect(() => {
+          // Configure the scroll reveal animation
+          ScrollReveal().reveal('.form_entry', {
+            delay: 200,
+            origin: 'bottom',
+            duration: 800,
+            scale: 1,
+            class:'form_title'
+          });
+        }, []);
     return (
         <div className="trial_form">
           <div className="form_title">
