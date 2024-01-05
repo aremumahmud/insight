@@ -1,5 +1,5 @@
 import Jumbo from "./jumbo"
-import first_aid from '../images/91c77f9d95bf34e4ba7f1c471d5b2bd8.jpg'
+import first_aid from '../images/inspect.jpg'
 import Article from "./article"
 
 

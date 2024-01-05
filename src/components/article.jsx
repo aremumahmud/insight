@@ -25,6 +25,7 @@ function Article({title , content , children, warning ,top, bottom}){
         <div className="article" style={{paddingTop:top?'0px':'',paddingBottom:bottom?'1rem':''}}>
         <p className="warning">{warning}</p>
             <div className="article_title">{title}</div>
+            <br />
             <div className="article_content">{
                 content && content.map(cont => <><p className='sub_article_contents'>{cont}</p><br /></>)
             }</div>
