@@ -1,55 +1,61 @@
 import React, { useRef, useEffect } from 'react';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const ParticleFall = () => {
-  const canvasRef = useRef(null);
+const ModelViewer = ({src}) => {
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({alpha:true});
+
+  const containerRef = useRef();
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    let particles = [];
+    const loader = new GLTFLoader();
 
-    function Particle(x, y) {
-      this.x = x;
-      this.y = y;
-      this.size = .1;
-      this.speedY = Math.random() * 1.5 + 0.5; // Decreased speed
-      this.color = `hsl(0, 0%, ${Math.random() * 100}%)`; // Random shades of gray
-      this.angle = Math.random() * Math.PI * 2; // Random initial angle
-      this.speedX = Math.random() * 2 - 1; // Random horizontal speed
-    }
+    // Load the GLB model
+    loader.load(
+      src,
+      (gltf) => {
+        // Adjust the position, rotation, or scale of the loaded model if needed
+        gltf.scene.position.set(-2, 0, 0);
+        gltf.scene.rotation.set(0, 0, 0);
+        gltf.scene.scale.set(1, 1, 1);
 
-    function createParticles() {
-      for (let i = 0; i < 5; i++) {
-        particles.push(new Particle(Math.random() * canvas.width, 0));
+        // Add the loaded model to the scene
+        scene.add(gltf.scene);
+      },
+      undefined,
+      (error) => {
+        console.error('Error loading GLB model', error);
       }
-    }
+    );
 
-    function animateParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (let i = 0; i < particles.length; i++) {
-        let p = particles[i];
-        p.y += p.speedY;
-        p.x += Math.cos(p.angle) * p.speedX; // Update x position based on angle
-        p.angle += 0.01; // Increment angle to create spiral effect
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.fillStyle = p.color;
-        ctx.fill();
-        if (p.y > canvas.height) {
-          particles.splice(i, 1);
-          i--;
-        }
-      }
-      createParticles();
-      requestAnimationFrame(animateParticles);
-    }
+    // Set up camera and renderer
+    camera.position.z = 5;
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
-    animateParticles();
-  }, []);
+    // Append renderer to the container
+    containerRef.current.appendChild(renderer.domElement);
 
-  return <canvas style={{width:'100%', height:'100vh',position:'fixed'}}  ref={canvasRef} />;
+    // Animation/rendering loop
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      // Perform any animations or updates here
+
+      // Render the scene
+      renderer.render(scene, camera);
+    };
+
+    animate();
+
+    // Cleanup on component unmount
+    return () => {
+      // Clean up resources, if needed
+    };
+  }, []); // Empty dependency array ensures the effect runs once on mount
+
+  return <div ref={containerRef} />;
 };
 
-export default ParticleFall;
-
+export default ModelViewer;

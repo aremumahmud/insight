@@ -1,6 +1,20 @@
+import { useEffect } from 'react';
 import '../css/article.css'
+import ScrollReveal from 'scrollreveal';
+
+  
 
 function Article({title , content , children, warning ,top, bottom}){
+    useEffect(() => {
+        // Configure the scroll reveal animation
+        ScrollReveal().reveal('.article', {
+          delay: 200,
+          origin: 'bottom',
+          duration: 800,
+          scale: 1.2,
+        });
+      }, []);
+    
     return (
         <div className="article" style={{paddingTop:top?'0px':'',paddingBottom:bottom?'1rem':''}}>
         <p className="warning">{warning}</p>
