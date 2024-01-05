@@ -1,6 +1,18 @@
+import { useEffect } from 'react';
 import '../css/Footer.css'
+ import ScrollReveal from 'scrollreveal';
 
 function Footer(){
+   
+      useEffect(() => {
+          // Configure the scroll reveal animation
+          ScrollReveal().reveal('.footer', {
+            delay: 200,
+            origin: 'bottom',
+            duration: 800,
+            scale: 1,
+          });
+        }, []);
     return (
         <div className="footer">
             <div className="top">
