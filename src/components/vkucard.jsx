@@ -1,7 +1,18 @@
+import { useEffect } from 'react';
 import '../css/vku_card.css'
-
+import ScrollReveal from 'scrollreveal';
 
 function VKUCard({title, content , nobtn , Icon}){
+    
+      useEffect(() => {
+          // Configure the scroll reveal animation
+          ScrollReveal().reveal('.vku_card_wrap', {
+            delay: 200,
+            origin: 'bottom',
+            duration: 800,
+            scale: 1,
+          });
+        }, []);
     return (
         <div className="vku_card_wrap">
              <div className="vku_card">
