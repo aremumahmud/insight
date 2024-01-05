@@ -60,7 +60,9 @@ function ContactUs(){
             </div>
           </div>
             </div>
+            <br />
             <p className="title">Send us Messages .</p>
+            <br />
             <ContactForm />
            </Article>
           </>
