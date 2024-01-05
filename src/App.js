@@ -25,6 +25,7 @@ import ContactUs from './components/contacts';
 import Register from './components/register';
 import SignIn from './components/Signin';
 import Render from './components/test2';
+import Inspect from './components/inspect';
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
       <Router>
         <Routes>
           <Route path={'/'} element={   <Home />} />
-          <Route path={'/sch'} element={  <Render /> } />
+          <Route path={'/inspection_trip'} element={  <Inspect /> } />
           <Route path={'/vku'} element={   <VKU />} />
           <Route path={'/register'} element={   <Register />} />
           <Route path={'/signin'} element={   <SignIn />} />

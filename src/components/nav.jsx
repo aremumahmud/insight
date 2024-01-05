@@ -8,6 +8,7 @@ function Nav({isopen}){
                 <li><a href='/emergency_responders'>Emergency Responders</a></li>
                 <li><a href='/vku'>VKU</a></li>
                 <li><a href='/moto'>Moto</a></li>
+                <li><a href='/inspection_trip'>Inspection Trip</a></li>
                 <li><a href='/pricing'>Pricing</a></li>
                 <li><a href='/contact'>Contact Us</a></li>
                 <li><a href='/about'>About Us</a></li>

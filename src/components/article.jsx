@@ -13,6 +13,12 @@ function Article({title , content , children, warning ,top, bottom}){
           duration: 800,
           scale: 1,
         });
+        ScrollReveal().reveal('.sub_article_contents', {
+            delay: 200,
+            origin: 'bottom',
+            duration: 800,
+            scale: 1,
+          });
       }, []);
     
     return (
@@ -20,7 +26,7 @@ function Article({title , content , children, warning ,top, bottom}){
         <p className="warning">{warning}</p>
             <div className="article_title">{title}</div>
             <div className="article_content">{
-                content && content.map(cont => <p>{cont}</p>)
+                content && content.map(cont => <p className='sub_article_contents'>{cont}</p>)
             }</div>
             {children}
         </div>
