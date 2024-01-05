@@ -1,7 +1,18 @@
+import { useEffect } from 'react';
 import '../css/pricecard.css'
-
+ import ScrollReveal from 'scrollreveal';
 
 function PriceCard({title,subtitle, content,book}){
+   
+    useEffect(() => {
+        // Configure the scroll reveal animation
+        ScrollReveal().reveal('.price_card_wrap', {
+          delay: 200,
+          origin: 'bottom',
+          duration: 800,
+          scale: 1,
+        });
+      }, []);
     return (
         <div className="price_card_wrap">
             

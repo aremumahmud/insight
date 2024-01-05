@@ -1,6 +1,18 @@
+import { useEffect } from 'react';
 import '../css/contactCard.css'
+ import ScrollReveal from 'scrollreveal';
 
 function ContactCard({title , address , email , phone}){
+ 
+      useEffect(() => {
+          // Configure the scroll reveal animation
+          ScrollReveal().reveal('.contact_card', {
+            delay: 200,
+            origin: 'bottom',
+            duration: 800,
+            scale: 1,
+          });
+        }, []);
     return (
         <div className="contact_card">
           <p className="contact_title">

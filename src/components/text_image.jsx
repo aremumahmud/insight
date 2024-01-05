@@ -9,7 +9,7 @@ function TextImage({reverse ,title, text ,image ,background, children,upspace}){
           delay: 200,
           origin: 'bottom',
           duration: 800,
-          scale: 1.2,
+          scale: 1,
         });
       }, []);
     

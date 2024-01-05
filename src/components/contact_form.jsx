@@ -1,6 +1,18 @@
+import { useEffect } from 'react';
 import '../css/contact_form.css'
+ import ScrollReveal from 'scrollreveal';
 
 function ContactForm(){
+ 
+      useEffect(() => {
+          // Configure the scroll reveal animation
+          ScrollReveal().reveal('.contact_form', {
+            delay: 200,
+            origin: 'bottom',
+            duration: 800,
+            scale: 1,
+          });
+        }, []);
     return (
       <div className="contact_form">
        <input type="text" name="" id="" placeholder='Name'/>

@@ -1,7 +1,19 @@
 import {  FaEnvelope, FaPhone } from "react-icons/fa";
 import '../css/team.css'
+import { useEffect } from "react";
+import ScrollReveal from 'scrollreveal';
 
 function Team({image , name , attributes,phone , email}){
+    
+    useEffect(() => {
+        // Configure the scroll reveal animation
+        ScrollReveal().reveal('.team', {
+          delay: 200,
+          origin: 'bottom',
+          duration: 800,
+          scale: 1,
+        });
+      }, []);
     return (
         <div className="team">
             <div className="team_image"><img src={image} alt="" /></div>

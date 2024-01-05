@@ -9,7 +9,7 @@ function VideoIframe({src}){
           delay: 200,
           origin: 'bottom',
           duration: 800,
-          scale: 1.2,
+          scale: 1,
         });
       }, []);
     return (
