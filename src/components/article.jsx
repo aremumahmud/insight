@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../css/article.css'
 import ScrollReveal from 'scrollreveal';
+import SlideText from './SlidedText';
 
   
 
@@ -24,7 +25,10 @@ function Article({title , content , children, warning ,top, bottom}){
     return (
         <div className="article" style={{paddingTop:top?'0px':'',paddingBottom:bottom?'1rem':''}}>
         <p className="warning">{warning}</p>
-            <div className="article_title">{title}</div>
+            {/* <div className="article_title">{title}</div> */}
+            <SlideText word={title} style={{
+                fontSize:'1.7rem'
+            }} />
             <br />
             <div className="article_content">{
                 content && content.map(cont => <><p className='sub_article_contents'>{cont}</p><br /></>)

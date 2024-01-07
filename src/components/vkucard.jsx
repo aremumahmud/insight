@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../css/vku_card.css'
 import ScrollReveal from 'scrollreveal';
+import SlideText from './SlidedText';
 
 function VKUCard({title, content , nobtn , Icon}){
     
@@ -17,7 +18,9 @@ function VKUCard({title, content , nobtn , Icon}){
         <div className="vku_card_wrap">
              <div className="vku_card">
             <div className="vku_image"><Icon size={40} /></div>
-            <div className="title">{title}</div>
+            <br />
+            <SlideText word={title} classes={'title'} />
+            {/* <div className="title">{title}</div> */}
             <div className="vku_entails">{
                 content && content.map(cont=><p>{cont}</p>)
             }</div>

@@ -8,6 +8,7 @@ import BulletCard from "./bullet_card"
 import NormCard from "./normCard"
 import TextImage from "./text_image"
 import ImageNorm from '../images/Partner_Hauptlin.png'
+import SlideText from "./SlidedText"
 
 let data = {
   title:'Motorcycle course for the Aarau, Baden and Zurich region .',
@@ -62,8 +63,9 @@ function Moto(){
             card_data.map(dat => <VKUCard nobtn={true} Icon={FaMotorcycle} title={dat.title} content={dat.content} />)
           }
           <div className="topic">
-            <p className="title">Motorcycle Test Requirements .</p>
-            <p className="title little">Clothing :</p>
+            <p className="title">Motorcycle Test Requirements</p>
+            <br />
+            <SlideText word={'Clothing :'} classes={"title little"} />
           </div>
           <div>
             {
@@ -72,8 +74,8 @@ function Moto(){
             
           </div>
           <div className="topic">
+            <SlideText word={'Moto :'} classes={"title little"} />
             
-            <p className="title little">Moto :</p>
           </div>
           <div>
           {
@@ -81,14 +83,14 @@ function Moto(){
             }
           </div>
           <TextImage upspace={true} background={true}  image={ImageNorm} reverse={true}>
-           <div className="title" style={{
+           <SlideText word={'Rent A Motorcycle ?'} classes="title" style={{
             padding:'1.1rem',
             width:'70%',
             paddingBottom:0
       
-           }}>
-           Rent A Motorcycle ?
-           </div>
+           }}/>
+           
+          
            <p style={{
             padding:'1.1rem',
            lineHeight:1.5

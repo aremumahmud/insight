@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../css/jumbo.css'
 import { useSpring, animated } from 'react-spring';
+import SlideText from './SlidedText';
 
 function Jumbo({image , text}){
     const [{ offset }, set] = useSpring(() => ({ offset: 0 })); 
@@ -26,7 +27,12 @@ function Jumbo({image , text}){
       >
       
        <div className="jumbo_content">
-        <p className='jumbo_title'>{text}</p>
+        <SlideText word={text} style={{
+          fontSize: '2rem',
+          paddingBottom: 0,
+          marginBottom: 0,
+          fontWeight:'normal'
+          }} />
         
        </div>
       </div>

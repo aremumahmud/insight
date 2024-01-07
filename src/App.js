@@ -15,25 +15,27 @@ import { useState } from 'react';
 //import ParticleBackground from './components/particle';
 
 import VKU from './components/vku'
-import Automobile from './components/automobile'
+// import Automobile from './components/automobile'
 import Moto from './components/moto'
 import Pricing from './components/pricing'
 import CheckTrip from './components/Checktrip'
-import ModelViewer from './components/test'
+// import ModelViewer from './components/test'
 import AboutUs from './components/about_us';
 import ContactUs from './components/contacts';
 import Register from './components/register';
 import SignIn from './components/Signin';
-import Render from './components/test2';
+// import Render from './components/test2';
 import Inspect from './components/inspect';
+
 
 function App() {
 
   let [isopen , setnav] = useState(false)
+  let [mode , setMode] = useState(false)
 
   return (
     <div className="App">
-      <Spiral />
+      <Spiral color_scheme={mode} />
       {/* <ParticleFall /> */}
       <Nav isopen={isopen}/>
       <Header isopen={isopen} setnav={setnav} />
@@ -65,5 +67,3 @@ function App() {
 
 export default App;
 
-
-{/* <ModelViewer src={'https://res.cloudinary.com/dvauarkh6/image/upload/v1704092027/hudrw49y08_1_dfadv5.glb'}/> */}

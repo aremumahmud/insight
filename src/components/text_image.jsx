@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../css/text_image.css'
 import ScrollReveal from 'scrollreveal';
+import SlideText from './SlidedText';
 
 function TextImage({reverse ,title, text ,image ,background, children,upspace}){
     useEffect(() => {
@@ -16,7 +17,8 @@ function TextImage({reverse ,title, text ,image ,background, children,upspace}){
     return (
 <div className="text_image" style={{flexDirection:reverse?'column-reverse':'column',background:background?'hsla(0, 0%, 100%, .6)':'transparent'}}>
     <div>
-    <div className="text_title">{title}</div>
+        <SlideText word={title} classes={'text_title'}/>
+    
     <div className="text">{text}{children}</div>
     </div>
     

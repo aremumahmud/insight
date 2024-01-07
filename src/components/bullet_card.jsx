@@ -1,4 +1,5 @@
 import '../css/bulletcard.css'
+import SlideText from './SlidedText'
 
 
 function BulletCard({title, content}){
@@ -7,7 +8,7 @@ function BulletCard({title, content}){
             
              <div className="bullet_card">
            <br />
-            <div className="title">{title}</div>
+           <SlideText word={title} classes={'title'} />
             <div className="bullet_entails">
                 <ul>{
                 content && content.map(cont=><li>{cont}</li>)

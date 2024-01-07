@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-const Spiral = () => {
+const Spiral = ({color_scheme}) => {
   const mountRef = useRef(null);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Spiral = () => {
     scene.add(particles);
 
     const geometry = new THREE.SphereGeometry(0.005, 32, 72);
-    const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+    const material = new THREE.MeshBasicMaterial({ color: (color_scheme? 0x000000:0xffffff) });
 
     for (let i = 0; i < 1000; i++) {
       const mesh = new THREE.Mesh(geometry, material);
@@ -45,7 +45,7 @@ const Spiral = () => {
     return () => {
       mount.removeChild(renderer.domElement);
     };
-  }, []);
+  }, [color_scheme]);
 
   return <div style={{width:'100%', height:'100vh',position:'fixed', zIndex:'-10'}}  ref={mountRef} />;
 };

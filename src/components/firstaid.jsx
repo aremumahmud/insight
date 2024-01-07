@@ -6,6 +6,7 @@ import AppleGoogle from "./app_goog"
 import TextImage from "./text_image"
 import Image3D from '../images/ucademy-3D-animation-low.gif'
 import ImageNorm from '../images/uss-img.png'
+import SlideText from "./SlidedText"
 
 
 let data = {
@@ -35,14 +36,13 @@ function FirstAid(){
             <TextImage  title={'Important Notice !'} image={Image3D} text={'Download the course material in the app after installation. The best way to do this is in the WLAN, since there is greater data usage. Also bring your info@ucademy.ch'}  />
           </Article>
           <TextImage upspace={true} background={true}  image={ImageNorm} reverse={true}>
-           <div className="title" style={{
+           <SlideText style={{
             padding:'1.1rem',
             width:'70%',
             paddingBottom:0
       
-           }}>
-           You Can Easily Book Your First Aid Course Online .
-           </div>
+           }} classes={"title"} word={"You Can Easily Book Your First Aid Course Online ."}/>
+          
            <div className="button back_color" style={{ margin:'1.1rem'}}>
             Submit
            </div>

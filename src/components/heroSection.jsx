@@ -1,11 +1,12 @@
 import '../css/herosection.css'
+import SlideText from './SlidedText'
 
 function HeroSection(){
     return (
         <div className="hero_section">
             <div></div>
             <div className='grouper'>
-              <div className="title">
+              {/* <div className="title">
             <span>w</span>
             <span>e</span>
             <span> </span>
@@ -39,7 +40,12 @@ function HeroSection(){
             <span>e</span>
             <span> .</span>
 
-            </div>
+            </div> */}
+            <SlideText word={'We learn to drive easy and safe .'} style={{
+                fontSize: '3rem',
+                lineHeight:'3.2rem',
+                fontWeight:'300'
+            }}/>
             <br />
             <div className="subtitle">
                 <span>We are a driving </span>

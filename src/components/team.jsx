@@ -2,6 +2,7 @@ import {  FaEnvelope, FaPhone } from "react-icons/fa";
 import '../css/team.css'
 import { useEffect } from "react";
 import ScrollReveal from 'scrollreveal';
+import SlideText from "./SlidedText";
 
 function Team({image , name , attributes,phone , email}){
     
@@ -18,8 +19,10 @@ function Team({image , name , attributes,phone , email}){
         <div className="team">
             <div className="team_image"><img src={image} alt="" /></div>
             <div className="team_info">
-                <div className="name"><p>{name}
-                    </p></div>
+                <br />
+                <SlideText word={name} classes={'name'}/>
+                {/* <div className="name"><p>{name}
+                    </p></div> */}
                 <div className="attributes"><p>{attributes}</p></div>
                 <div className="team_contacts">
                     <div>

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../css/bulletcard.css'
 import ScrollReveal from 'scrollreveal';
+import SlideText from './SlidedText';
 
 function NormCard({title, content}){
   
@@ -18,7 +19,7 @@ function NormCard({title, content}){
             
              <div className="bullet_card">
            <br />
-            <div className="title">{title}</div>
+           <SlideText word={title} classes={'title'} />
             <div className="bullet_entails">
                 {content}
             </div>

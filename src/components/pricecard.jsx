@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../css/pricecard.css'
  import ScrollReveal from 'scrollreveal';
+import SlideText from './SlidedText';
 
 function PriceCard({title,subtitle, content,book}){
    
@@ -18,7 +19,7 @@ function PriceCard({title,subtitle, content,book}){
             
              <div className="price_card">
            <br />
-            <div className="title center">{title}</div>
+           <SlideText word={title} classes={'title center'} />
             <div className="title little center subtitle">{subtitle}</div>
             <div className="price_entails">
                 <ul>{

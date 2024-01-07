@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../css/Footer.css'
  import ScrollReveal from 'scrollreveal';
+import SlideText from './SlidedText';
 
 function Footer(){
    
@@ -16,7 +17,11 @@ function Footer(){
     return (
         <div className="footer">
             <div className="top">
-                <p>Let's talk</p>
+               
+                <SlideText word={"Let's talk"} style={{
+                    fontSize: '3rem',
+                    fontWeight: 500,
+                    marginBottom: '10px'                }}/>
             </div>
             <div className="contact">
                 <div className="image"></div>
