@@ -7,6 +7,12 @@
     padding-left: 1rem;
 }
 
+.light_footer {
+    background-color: #fff !important;
+    border-top: 1px solid;
+    margin: 10px;
+}
+
 .footer .top p {
     font-size: 3rem;
     font-weight: 500;
@@ -36,6 +42,9 @@
     width: 3.5rem;
     background: hsla(0, 0%, 100%, .6);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer .contact .subtitle {
@@ -72,4 +81,16 @@
 
 .footer .pages ul li:hover {
     text-decoration: underline;
+}
+
+.light_footer .contact .image {
+    background: hsl(0deg 7% 73%) !important
+}
+
+.light_footer .contact .subtitle {
+    color: #101116;
+}
+
+.light_footer .pages ul {
+    color: #101116;
 }

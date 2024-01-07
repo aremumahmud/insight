@@ -4,7 +4,7 @@ import '../css/cards.css'; // You may need to create a CSS file for styling
 import ScrollReveal from 'scrollreveal';
 import SlideText from './SlidedText';
 
-const ParallaxImage = ({tags , title , image}) => {
+const ParallaxImage = ({tags , title , image, theme}) => {
   const [{ offset }, set] = useSpring(() => ({ offset: 0 })); 
 
   const handleScroll = () => {
@@ -28,9 +28,9 @@ const ParallaxImage = ({tags , title , image}) => {
   //   });
   // }, []);
   return (
-    <div className="parallax-container">
+    <div className={theme?"parallax-container light_parallax":'parallax-container'}>
       <div className="info">
-        <SlideText classes={'title'} word={title|| ''} />
+        <SlideText theme={theme} classes={'title'} word={title|| ''} style={theme?{color:'#fff'}:{color:'#090c15'}} />
         {/* <div className="title">{}</div> */}
         <div className="tags">
           {

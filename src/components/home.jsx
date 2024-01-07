@@ -39,14 +39,14 @@ let data  = [{
     tags: ['Online' , 'Kaufen' ],
     image: card
   }]
-function Home(){
+function Home({theme}){
     return (
         <ParallaxProvider>
             <Parallax y={[60, 60]} tagOuter='figure'>
-                <HeroSection />
+                <HeroSection theme={theme} />
                 <div>
                     {
-                    data.map(item=> <ParallaxImage title={item.title} tags={item.tags} image={item.image} />)
+                    data.map(item=> <ParallaxImage theme={theme} title={item.title} tags={item.tags} image={item.image} />)
                 }
                 </div>
                 <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />            </Parallax>

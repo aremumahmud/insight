@@ -12,6 +12,15 @@
     flex-direction: column;
 }
 
+.light_nav {
+    background-color: #ffffff !important;
+}
+
+.light_nav ul li a {
+    text-decoration: none;
+    color: #090c15 !important;
+}
+
 .nav_bar ul {
     padding-left: 0;
     list-style-type: none;
@@ -22,12 +31,14 @@
     text-align: center;
     font-size: 1rem;
 }
+
 .nav_bar ul li a {
-    text-decoration:none;
+    text-decoration: none;
     color: #fff;
 }
+
 .nav_bar ul li a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
     color: hsla(0, 0%, 100%, .6);
 }
 
@@ -40,8 +51,11 @@
 .nav_bar .contact .image {
     height: 3.5rem;
     width: 3.5rem;
-    background: hsla(0, 0%, 100%, .6);
+    background: hsl(0, 0%, 100%);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav_bar .contact .subtitle {
@@ -53,4 +67,16 @@
 .nav_bar .contact .title_ {
     font-size: 1.275rem;
     font-weight: 100;
+}
+
+.light_nav .contact .title_ {
+    color: #090c15 !important;
+}
+
+.light_nav .contact .image {
+    background: hsl(0deg 7% 73%)
+}
+
+.light_nav .contact .subtitle {
+    color: #101116;
 }

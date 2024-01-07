@@ -1,32 +1,41 @@
-.hero_section {
-    width: 20rem;
-    padding: 2rem;
-    height: 83vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.hero_section .grouper {
-    height: fit-content;
-}
-
-.hero_section .title span {
-    font-size: 3rem
-}
-
-.hero_section .subtitle {
-    color: hsla(0, 0%, 100%, .6);
-    font-size: .875rem;
-    font-weight: 100;
-    line-height: 2;
-}
-
-.hero_section .cta {
-    border: 1px solid hsla(0, 0%, 100%, .6);
-    font-size: .875rem;
-    font-weight: 100;
-    width: fit-content;
-    padding: .875rem;
-    border-radius: .85rem;
-}
+    .hero_section {
+        width: 20rem;
+        padding: 2rem;
+        height: 83vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .hero_section .grouper {
+        height: fit-content;
+    }
+    
+    .hero_section .title span {
+        font-size: 3rem
+    }
+    
+    .light_hero .subtitle {
+        color: hsla(0, 4%, 16%, 0.836) !important
+    }
+    
+    .light_hero .cta {
+        color: hsla(0, 4%, 16%, 0.836) !important;
+        border: 1px solid hsla(0, 4%, 16%, 0.836) !important;
+    }
+    
+    .hero_section .subtitle {
+        color: hsla(0, 0%, 100%, .6);
+        font-size: .875rem;
+        font-weight: 100;
+        line-height: 2;
+    }
+    
+    .hero_section .cta {
+        border: 1px solid hsla(0, 0%, 100%, .6);
+        font-size: .875rem;
+        font-weight: 100;
+        width: fit-content;
+        padding: .875rem;
+        border-radius: .85rem;
+    }

@@ -3,7 +3,7 @@ import '../css/jumbo.css'
 import { useSpring, animated } from 'react-spring';
 import SlideText from './SlidedText';
 
-function Jumbo({image , text}){
+function Jumbo({image , text, theme}){
     const [{ offset }, set] = useSpring(() => ({ offset: 0 })); 
 
     const handleScroll = () => {
@@ -19,7 +19,7 @@ function Jumbo({image , text}){
 
   return (
     <div
-         className="jumbo-image"
+         className={theme?"jumbo-image light_jumbo":"jumbo-image"}
         style={{
           transform: offset.interpolate((o) => `translateY(${o * 0.1}px)`),
           backgroundImage: `url(${image})`

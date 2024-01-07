@@ -5,7 +5,7 @@ import SlideText from './SlidedText';
 
   
 
-function Article({title , content , children, warning ,top, bottom}){
+function Article({title , content , children, warning ,top, bottom, theme}){
     useEffect(() => {
         // Configure the scroll reveal animation
         ScrollReveal().reveal('.article', {
@@ -23,7 +23,7 @@ function Article({title , content , children, warning ,top, bottom}){
       }, []);
     
     return (
-        <div className="article" style={{paddingTop:top?'0px':'',paddingBottom:bottom?'1rem':''}}>
+        <div className={theme?"article light_article":"article"} style={{paddingTop:top?'0px':'',paddingBottom:bottom?'1rem':''}}>
         <p className="warning">{warning}</p>
             {/* <div className="article_title">{title}</div> */}
             <SlideText word={title} style={{

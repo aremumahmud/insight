@@ -11,6 +11,10 @@
     font-weight: 500;
 }
 
+.light_article .article_content {
+    color: #101116 !important;
+}
+
 .article .article_content {
     font-size: .825rem;
     color: hsla(0, 0%, 100%, .6);

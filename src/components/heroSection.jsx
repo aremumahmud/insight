@@ -1,9 +1,9 @@
 import '../css/herosection.css'
 import SlideText from './SlidedText'
 
-function HeroSection(){
+function HeroSection({theme}){
     return (
-        <div className="hero_section">
+        <div className={theme?"hero_section light_hero":'hero_section'}>
             <div></div>
             <div className='grouper'>
               {/* <div className="title">
@@ -47,7 +47,7 @@ function HeroSection(){
                 fontWeight:'300'
             }}/>
             <br />
-            <div className="subtitle">
+            <div className='subtitle'>
                 <span>We are a driving </span>
                 <span>agency </span>
                 <span>with world--class <br /> </span>

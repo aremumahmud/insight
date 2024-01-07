@@ -1,9 +1,10 @@
+import { FaTelegram, FaTelegramPlane } from 'react-icons/fa'
 import '../css/nav.css'
 
 
-function Nav({isopen}){
+function Nav({isopen , theme}){
     return (
-        <div className="nav_bar" style={{display:isopen?'flex':'none'}}>
+        <div className={theme?"nav_bar light_nav":'nav_bar'} style={{display:isopen?'flex':'none'}}>
             <ul>
                 <li><a href='/emergency_responders'>Emergency Responders</a></li>
                 <li><a href='/vku'>VKU</a></li>
@@ -17,7 +18,9 @@ function Nav({isopen}){
             </ul>
             <br /><br /><br />
             <div className="contact">
-                <div className="image"></div>
+                <div className="image">
+<FaTelegramPlane size={30} />
+                </div>
                 <div className="info_contact">
                     <p className='title_'>We are much closer</p>
                     <p className='subtitle'>Contact us via Telegram</p>

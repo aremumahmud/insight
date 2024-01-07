@@ -25,13 +25,13 @@ We say: use your smartphone and don't put it away!` , 'If you are taking part in
 }
 
 
-function FirstAid(){
+function FirstAid({theme}){
     return (
         <>
-          <Jumbo image={first_aid} text={'First Aid'} />
-          <Article title={data.title} content={data.content}/>
+          <Jumbo theme={theme} image={first_aid} text={'First Aid'} />
+          <Article theme={theme} title={data.title} content={data.content}/>
           <VideoIframe src={'https://www.youtube.com/embed/uLESrpuNsIs?autoplay=1&amp;feature=oembed'} />
-          <Article title={data2.title} content={data2.content}>
+          <Article theme={theme}  title={data2.title} content={data2.content}>
             <AppleGoogle />
             <TextImage  title={'Important Notice !'} image={Image3D} text={'Download the course material in the app after installation. The best way to do this is in the WLAN, since there is greater data usage. Also bring your info@ucademy.ch'}  />
           </Article>

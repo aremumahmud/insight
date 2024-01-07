@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 import '../css/Footer.css'
  import ScrollReveal from 'scrollreveal';
 import SlideText from './SlidedText';
+import { FaTelegramPlane } from 'react-icons/fa';
 
-function Footer(){
+function Footer({theme}){
    
       useEffect(() => {
           // Configure the scroll reveal animation
@@ -15,7 +16,7 @@ function Footer(){
           });
         }, []);
     return (
-        <div className="footer">
+        <div className={theme?"footer light_footer":'footer'}>
             <div className="top">
                
                 <SlideText word={"Let's talk"} style={{
@@ -24,7 +25,7 @@ function Footer(){
                     marginBottom: '10px'                }}/>
             </div>
             <div className="contact">
-                <div className="image"></div>
+                <div className="image"><FaTelegramPlane size={30} /></div>
                 <div className="info_contact">
                     <p className='title_'>We are much closer</p>
                     <p className='subtitle'>Contact us via Telegram</p>
@@ -32,7 +33,9 @@ function Footer(){
             </div>
             <br />
             <div className='pages'>
-                <p>Pages</p>
+            <br />
+                <p style={{fontSize:'2rem'}}>Pages</p>
+                <br />
                  <ul>
                     <li>Emergency Responders</li>
                     <li>VKU</li>

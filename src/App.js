@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 import Home from './components/home';
 import FirstAid from './components/firstaid';
 import Nav from './components/nav';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 //import ParticleBackground from './components/particle';
 
 import VKU from './components/vku'
@@ -31,34 +31,40 @@ import Inspect from './components/inspect';
 function App() {
 
   let [isopen , setnav] = useState(false)
-  let [mode , setMode] = useState(false)
+  let [mode , setMode] = useState(true)
+
+  useEffect(()=>{
+    document.body.style.background = mode?'#ffffff':'#090c15'
+    document.body.style.color = mode?'#090c15':'#ffffff'
+
+  },[mode])
 
   return (
     <div className="App">
       <Spiral color_scheme={mode} />
       {/* <ParticleFall /> */}
-      <Nav isopen={isopen}/>
+      <Nav theme={mode} isopen={isopen}/>
       <Header isopen={isopen} setnav={setnav} />
       {/* <FirstAid /> */}
       <Router>
         <Routes>
-          <Route path={'/'} element={   <Home />} />
-          <Route path={'/inspection_trip'} element={  <Inspect /> } />
-          <Route path={'/vku'} element={   <VKU />} />
-          <Route path={'/register'} element={   <Register />} />
-          <Route path={'/signin'} element={   <SignIn />} />
-          <Route path={'/about'} element={   <AboutUs />} />
-          <Route path={'/moto'} element={   <Moto />} />
-          <Route path={'/contact'} element={   <ContactUs />} />
-          <Route path={'/pricing'} element={   <Pricing />} />
-          <Route path={'/trial_lesson'} element={   <CheckTrip />} />
-          <Route path={'/emergency_responders'} element={   <FirstAid />} />
+          <Route path={'/'} element={   <Home theme={mode} />} />
+          <Route path={'/inspection_trip'} element={  <Inspect theme={mode} /> } />
+          <Route path={'/vku'} element={   <VKU theme={mode} />} />
+          <Route path={'/register'} element={   <Register theme={mode} />} />
+          <Route path={'/signin'} element={   <SignIn theme={mode} />} />
+          <Route path={'/about'} element={   <AboutUs theme={mode} />} />
+          <Route path={'/moto'} element={   <Moto theme={mode} />} />
+          <Route path={'/contact'} element={   <ContactUs theme={mode} />} />
+          <Route path={'/pricing'} element={   <Pricing theme={mode}/>} />
+          <Route path={'/trial_lesson'} element={   <CheckTrip theme={mode} />} />
+          <Route path={'/emergency_responders'} element={   <FirstAid theme={mode}/>} />
         </Routes>
       </Router>
    
       <br /><br />
       <div>
-        <Footer />
+        <Footer theme={mode}/>
       </div>
       
     </div>
