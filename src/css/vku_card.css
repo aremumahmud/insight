@@ -1,54 +1,61 @@
-    .vku_card {
-        background: hsla(0, 0%, 100%, .6);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: .5rem;
-        text-align: center;
-        width: 90%;
-        border-radius: 40px;
-        height: fit-content
-    }
-    
-    .vku_card_wrap {
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .vku_image {
-        width: 8rem;
-        height: 8rem;
-        border-radius: 50%;
-        background-color: #090c15;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .vku_entails {
-        padding: 10px;
-        line-height: 1.5;
-        font-size: .825rem;
-        /* color: black*/
-    }
-    
-    .button1 {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-        background-color: #fff;
-        width: fit-content;
-        color: #000;
-        border-radius: 40px;
-    }
-    
-    .button1:hover {
-        color: #090c15 !important;
-        border: 1px solid #090c15 !important;
-        background: transparent !important;
-    }
+.vku_card {
+    background: hsla(0, 0%, 100%, .6);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1.5rem;
+    /* text-align: center; */
+    width: 90%;
+    border-radius: 40px;
+    height: fit-content;
+    gap: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.vku_card_wrap {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vku_image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: #090c15;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vku_entails {
+    padding: 20px;
+    line-height: 1.5;
+    font-size: .825rem;
+    padding-left: 0;
+    /* color: black*/
+}
+
+.vku_entails p {
+    padding: 5px;
+    padding-left: 0;
+}
+
+.button1 {
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    border-radius: 40px;
+}
+
+.button1:hover {
+    color: #090c15 !important;
+    border: 1px solid #090c15 !important;
+    background: transparent !important;
+}
