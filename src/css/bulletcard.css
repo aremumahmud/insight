@@ -2,10 +2,11 @@
     background: hsla(0, 0%, 100%, .6);
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
     width: 90%;
     border-radius: 40px;
-    height: fit-content
+    height: fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .bullet_card_wrap {
@@ -29,10 +30,15 @@
 .bullet_entails {
     padding: 10px;
     line-height: 1.5;
-    font-size: .825rem;}
+    font-size: .825rem;
+}
 
 .bullet_entails ul {
     padding-left: 0;
     list-style-type: circle;
     font-size: .825rem;
+}
+
+.bullet_entails ul li {
+    padding: .2rem
 }

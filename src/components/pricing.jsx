@@ -36,13 +36,13 @@ let pricing_data = [{
   content:['Traffic in the Baden region is like sand at the sea. To spice up this dry lesson so that you can get the course behind you with a lot of fun in a short time, we have hired a specialist who is a real ace in the field of VKU.'],subtitle:"CHF 140.-",book:true
 }]
 
-function Pricing(){
+function Pricing({theme}){
     return (
         <>
-          <Jumbo image={price} text={'Pricing'} />
-          <Article warning={'Drive today - pay tomorrow'} title={data.title} content={data.content}/>
+          <Jumbo theme={theme}  image={price} text={'Pricing'} />
+          <Article theme={theme}  warning={'Drive today - pay tomorrow'} title={data.title} content={data.content}/>
          {
-          pricing_data.map(prices=><PriceCard book={prices.book} title={prices.title} subtitle={prices.subtitle} content={prices.content||[]} /> )
+          pricing_data.map(prices=><PriceCard theme={theme}  book={prices.book} title={prices.title} subtitle={prices.subtitle} content={prices.content||[]} /> )
          }
           
         </>

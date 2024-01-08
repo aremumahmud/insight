@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import '../css/trial_form.css'
  import ScrollReveal from 'scrollreveal';
 
-function TrialForm(){
+function TrialForm({theme}){
    
       useEffect(() => {
           // Configure the scroll reveal animation
@@ -15,7 +15,7 @@ function TrialForm(){
           });
         }, []);
     return (
-        <div className="trial_form">
+        <div className={theme?"trial_form light_trial":"trial_form"}>
           <div className="form_title">
           Request A Trial Lesson Now .
           </div>

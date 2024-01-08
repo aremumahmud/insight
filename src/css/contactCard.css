@@ -13,3 +13,18 @@
 .contact_card .socials span a {
     color: hsla(0, 0%, 100%, .6);
 }
+
+.contact_card .socials div {
+    padding: .2rem;
+    padding-left: 0;
+}
+
+.light_card .address {
+    color: #101116 !important;
+    font-size: smaller;
+}
+
+.light_card .socials span a {
+    color: #101116 !important;
+    font-size: smaller;
+}

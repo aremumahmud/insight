@@ -18,7 +18,7 @@ function PriceCard({title,subtitle, content,book}){
         <div className="price_card_wrap">
             
              <div className="price_card">
-           <br />
+          
            <SlideText word={title} classes={'title center'} />
             <div className="title little center subtitle">{subtitle}</div>
             <div className="price_entails">

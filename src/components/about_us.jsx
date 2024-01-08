@@ -46,14 +46,14 @@ image:tettina,
 name:'TETTINA',
 attributes:'Spieglein Spieglein an der Wand, wer ist die schönste Fahrlehrerin im ganzen Land? Tettin vo Prishtin 👐🏼 Nach der Misswahl zur Miss Prishtina wechselte sie ihren job und wurde Käserin oder so etwas in der Art. Kurzes kleid, high heels und roter lippenstift, Bei ihr weiss man nie ob sie gerade am arbeiten ist oder an eine Modenshow geht. Bei Ihr bist du auf der sicheren Seite, denn kein Experte kann „nein“ zu tettina sagen'}]
 
-function AboutUs(){
+function AboutUs({theme}){
     return (
         <>
-          <Jumbo image={card} text={'About Us'} />
-          <Article bottom={true}  title={'Super Driving Instructor For Super Learner Drivers .'} content={['We have set the goal of making driver training possible for everyone, regardless of their financial situation']}/>
-          <Article top={true} title={'Our Creative Team .'} content={[`The Star driving school only works with selected driving instructors and instructors. With the driving instructors and instructors, we make sure that everyone is specialized in their area and very strong. This is how we ensure high quality and can continue to offer our students a high standard. With a relaxed, collegial and humorous atmosphere, you can quickly reach your goal with a lot of fun and humor.`]} />
+          <Jumbo theme={theme}  image={card} text={'About Us'} />
+          <Article theme={theme}  bottom={true}  title={'Super Driving Instructor For Super Learner Drivers .'} content={['We have set the goal of making driver training possible for everyone, regardless of their financial situation']}/>
+          <Article theme={theme}  top={true} title={'Our Creative Team .'} content={[`The Star driving school only works with selected driving instructors and instructors. With the driving instructors and instructors, we make sure that everyone is specialized in their area and very strong. This is how we ensure high quality and can continue to offer our students a high standard. With a relaxed, collegial and humorous atmosphere, you can quickly reach your goal with a lot of fun and humor.`]} />
           {
-            team_data.map(team=> <Team phone={team.phone} email={team.email} name={team.name} attributes={team.attributes} image={team.image} />)
+            team_data.map(team=> <Team theme={theme}  phone={team.phone} email={team.email} name={team.name} attributes={team.attributes} image={team.image} />)
           }
           
           </>

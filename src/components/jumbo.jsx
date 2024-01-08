@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import '../css/jumbo.css'
-import { useSpring, animated } from 'react-spring';
+import { useSpring} from 'react-spring';
 import SlideText from './SlidedText';
 
 function Jumbo({image , text, theme}){

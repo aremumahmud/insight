@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import '../css/contactCard.css'
  import ScrollReveal from 'scrollreveal';
 
-function ContactCard({title , address , email , phone}){
+function ContactCard({title , address , email , phone,theme}){
  
       useEffect(() => {
           // Configure the scroll reveal animation
@@ -14,7 +14,7 @@ function ContactCard({title , address , email , phone}){
           });
         }, []);
     return (
-        <div className="contact_card">
+        <div className={theme?"contact_card light_card":"contact_card"}>
           <p className="contact_title">
             {title}: 
           </p>

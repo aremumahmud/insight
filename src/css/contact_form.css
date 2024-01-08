@@ -10,6 +10,22 @@ textarea {
     border: none;
 }
 
+.light_form input,
+textarea {
+    color: #101116;
+    border: 1px solid;
+}
+
+.light_form textarea::placeholder {
+    color: #101116 !important;
+    ;
+}
+
+.light_form input::placeholder {
+    color: #101116 !important;
+    ;
+}
+
 .contact_form textarea::placeholder {
     color: #fff;
 }
@@ -24,8 +40,19 @@ textarea {
     padding: 1rem;
 }
 
+.light_form .button {
+    background-color: #101116;
+    color: #fff;
+}
+
 .contact_form .button:hover {
     border: 1px solid hsla(0, 0%, 100%, .6) !important;
     color: hsla(0, 0%, 100%, .6) !important;
+    background-color: transparent;
+}
+
+.light_form .button:hover {
+    border: 1px solid !important;
+    color: #101116 !important;
     background-color: transparent;
 }

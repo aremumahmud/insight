@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import ScrollReveal from 'scrollreveal';
 import SlideText from "./SlidedText";
 
-function Team({image , name , attributes,phone , email}){
+function Team({image , name , attributes,phone , email,theme}){
     
     useEffect(() => {
         // Configure the scroll reveal animation
@@ -16,7 +16,7 @@ function Team({image , name , attributes,phone , email}){
         });
       }, []);
     return (
-        <div className="team">
+        <div className={theme?"team light_team":"team"}>
             <div className="team_image"><img src={image} alt="" /></div>
             <div className="team_info">
                 <br />
@@ -24,6 +24,7 @@ function Team({image , name , attributes,phone , email}){
                 {/* <div className="name"><p>{name}
                     </p></div> */}
                 <div className="attributes"><p>{attributes}</p></div>
+                <br />
                 <div className="team_contacts">
                     <div>
                         <a href={"tel:"+ phone}>

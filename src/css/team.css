@@ -39,3 +39,11 @@
     align-items: center;
     gap: .2rem;
 }
+
+.light_team .team_contacts a {
+    color: #101116;
+}
+
+.light_team .attributes {
+    color: #101116;
+}

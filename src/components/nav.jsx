@@ -1,4 +1,4 @@
-import { FaTelegram, FaTelegramPlane } from 'react-icons/fa'
+import {FaTelegramPlane } from 'react-icons/fa'
 import '../css/nav.css'
 
 

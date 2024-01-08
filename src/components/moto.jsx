@@ -52,20 +52,21 @@ let moto_data=[{
   content:'A two-wheel motorcycle without a sidecar with a maximum displacement of 125 cm3 and an engine output of maximum 11 kW. (For handlebars 18 years at most 50 cm3).'
 }]
 
-function Moto(){
+function Moto({theme}){
     return (
         <>
-          <Jumbo image={bike} text={'Moto'} />
-          <Article title={data.title} content={data.content}/>
+          <Jumbo theme={theme} image={bike} text={'Moto'} />
+          <Article  theme={theme}  title={data.title} content={data.content}/>
           <VideoIframe src={'https://www.youtube.com/watch?v=MCABhYXoYrI'}/>
           <br /><br /><br /><br />
           {
-            card_data.map(dat => <VKUCard nobtn={true} Icon={FaMotorcycle} title={dat.title} content={dat.content} />)
+            card_data.map(dat => <VKUCard  theme={theme}  nobtn={true} Icon={FaMotorcycle} title={dat.title} content={dat.content} />)
           }
           <div className="topic">
-            <p className="title">Motorcycle Test Requirements</p>
+            <p className="title" style={{fontSize:'2rem', fontWeight:'normal'}}>Motorcycle Test Requirements .</p>
+            <br /><br />
+            <SlideText style={{fontSize:'1.7rem', fontWeight:'normal'}} word={'Clothing :'} classes={"title little"} />
             <br />
-            <SlideText word={'Clothing :'} classes={"title little"} />
           </div>
           <div>
             {
@@ -74,8 +75,8 @@ function Moto(){
             
           </div>
           <div className="topic">
-            <SlideText word={'Moto :'} classes={"title little"} />
-            
+            <SlideText word={'Moto :'} classes={"title little"} style={{fontSize:'1.7rem', fontWeight:'normal'}} />
+            <br />
           </div>
           <div>
           {

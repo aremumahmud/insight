@@ -18,7 +18,7 @@ function NormCard({title, content}){
         <div className="bullet_card_wrap">
             
              <div className="bullet_card">
-           <br />
+           
            <SlideText word={title} classes={'title'} />
             <div className="bullet_entails">
                 {content}

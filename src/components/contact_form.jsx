@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import '../css/contact_form.css'
  import ScrollReveal from 'scrollreveal';
 
-function ContactForm(){
+function ContactForm({theme}){
  
       useEffect(() => {
           // Configure the scroll reveal animation
@@ -14,7 +14,7 @@ function ContactForm(){
           });
         }, []);
     return (
-      <div className="contact_form">
+      <div className={theme?"contact_form light_form":'contact_form'}>
        <input type="text" name="" id="" placeholder='Name'/>
        <input type="email" name="" id="" placeholder='Email' />
        <input type="text" name="" id="" placeholder='Subject' />

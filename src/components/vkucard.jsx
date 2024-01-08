@@ -21,7 +21,7 @@ function VKUCard({title, content , nobtn , Icon}){
             {/* <div className="vku_image"><Icon size={40} /></div> */}
            
             <div>
-            <SlideText word={<div style={{display:'flex', justifyContent:'flex-start', alignItems:'center', gap:'.4rem'}}><FaRoad /> {title}</div>} classes={'title'} />
+            <SlideText word={<div style={{display:'flex', justifyContent:'flex-start', alignItems:'center', gap:'.4rem'}}><Icon /> {title}</div>} classes={'title'} />
             {/* <div className="title">{title}</div> */}
             <div className="vku_entails">{
                 content && content.map(cont=><p>{cont}</p>)

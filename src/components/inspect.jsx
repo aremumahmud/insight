@@ -19,11 +19,11 @@ let data = {
 }
 
 
-function Inspect(){
+function Inspect({theme}){
     return (
         <>
-          <Jumbo image={first_aid} text={'Inspect Trip'} />
-          <Article title={data.title} content={data.content}/>
+          <Jumbo theme={theme} image={first_aid} text={'Check Trip'} />
+          <Article theme={theme}  title={data.title} content={data.content}/>
         
         </>
     )

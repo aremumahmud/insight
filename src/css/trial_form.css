@@ -48,3 +48,19 @@ select {
     color: hsla(0, 0%, 100%, .6) !important;
     background-color: transparent;
 }
+
+.light_trial input,
+select {
+    border: 1px solid !important;
+}
+
+.light_trial .button1 {
+    background-color: #101116;
+    color: #fff
+}
+
+.light_trial .button1:hover {
+    border: 1px solid !important;
+    color: #101116 !important;
+    background-color: transparent;
+}

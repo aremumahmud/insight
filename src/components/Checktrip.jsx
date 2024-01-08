@@ -3,12 +3,12 @@ import card from '../images/a560de56786d9472f3aada67e829e3f4.jpg'
 
 import TrialForm from "./trial_form"
 
-function CheckTrip(){
+function CheckTrip({theme}){
     return (
         <>
-          <Jumbo image={card} text={'Trial Lesson'} />
+          <Jumbo theme={theme} image={card} text={'Trial Lesson'} />
           <br /> <br />
-          <TrialForm />
+          <TrialForm theme={theme} />
           </>
     )
 }
