@@ -4,7 +4,7 @@ import Article from "./article"
 import PriceCard from "./pricecard"
 
 let data = {
-  title:'Pay Comfortably In Installments For All Driving Hours .',
+  title:'Alle Fahrstunden bequem in Raten bezahlen .',
   content:[`In der heutigen Zeit der Mobilität ist es beinahe Pflicht, die Autoprüfung abzulegen. Auf dem Weg zum Erwerb des Führerausweises muss man aber einige Hürden bewältigen wie die finanzielle Investition in Fahrstunden, Theorieprüfung, Verkehrskunde und Fahrkurse. `,
 ` Die finanzielle Situation stellt viele junge Menschen vor Probleme. Der berufliche und private Druck, die Prüfung so schnell wie möglich zu bestehen, und die fehlenden finanziellen Mittel sind ein grosses Hindernis.`,
 ` Studien haben ergeben, dass man im Durchschnitt einige Fahrstunden mehr benötigt, wenn man in unregelmässigen Abständen die Fahrschule besucht. Wir bieten für diese Problematik eine faire und kundenorientierte Lösung: den Kauf auf Raten. Buche online Fahrstunden und gib Gas. Wir helfen dir, die Prüfung so rasch wie möglich zu bestehen. Dabei kannst du dich nur auf das Fahren konzentrieren und brauchst dir keine Sorgen um die finanziellen Mittel zu machen.`,
