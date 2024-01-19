@@ -11,51 +11,47 @@ import ImageNorm from '../images/Partner_Hauptlin.png'
 import SlideText from "./SlidedText"
 
 let data = {
-  title:'Motorcycle course for the Aarau, Baden and Zurich region .',
-  content: ['The Star driving school has established itself in the basic motorcycle course area for the regions of Aarau, Baden and Zurich and is the point of contact for an entertaining and interesting course. The courses are structured close to the exam and structured in an instructive manner. With a lot of fun and humor, the hours fly by.']
+  title:'Motorradkurs für die Region Aarau, Baden und Zürich .',
+  content: [`Die Fahrschule Star hat sich im Bereich Motorradgrundkurs für die Regionen Aarau, Baden und Zürich etabliert und ist die Anlaufstelle für einen unterhaltsamen und interessanten Kurs.`,
+` Die Kurse sind prüfungsnah aufgebaut und lehrreich gegliedert. Mit viel Spass und Humor vergehen die Stunden wie im Flug. Viele unterschätzen das sehr hohe Niveau, welches in der Schweiz an der Prüfung gefragt ist. Im vergangenen Jahr betrug die Durchfallsquote sagenhafte 56 %!`,` Wir haben unseren Motorradgrundkurs so aufgebaut, dass man praktisch keine Fahrstunden mehr benötigt (sofern man die Kursziele erreicht und übt). Eine Prüfungsfahrtlektion gibt ein Gefühl, wie es an der Prüfung sein wird, und dient als Standortbestimmung.`]
 }
 
 let card_data = [{
-  title:'Motorbike trial course',
-  content:['Motorcycling is not just a way to get around, it is passion and embodies a feeling of freedom.In this course we show you the first steps and impart the necessary know-how and the ability to move a motorcycle.With a lot of humor we combine theory with practice in such a way that you would like to keep going all day long.']
+  title:'Motorrad-Schnupperkurs',
+  content:['Motorradfahren ist nicht nur eine Art, um sich fortzubewegen, es ist Leidenschaft und verkörpert ein Gefühl von Freiheit. In diesem Kurs zeigen wir dir die ersten Schritte und vermitteln das nötige Know-how und die Fähigkeit, ein Motorrad zu bewegen. Mit viel Humor kombinieren wir die Theorie mit der Praxis so, dass du am liebsten noch den ganzen Tag weitermachen möchtest.']
 },{
-  title:'Basic Motorcycle Courses',
-  content:['In categories A1 and A, you must complete the practical basic course within four months of the date of issue of the learning driving license. It is 8 hours for category A1 and 12 hours for category A.With a category A learning driving license, you may not complete the basic training with a category A1 vehicle.']
+  title:'Motorrad-Grundkurse',
+  content:['Bei den Kategorien A1 und A beschränkt ist innerhalb von vier Monaten ab Ausstellungsdatum des Lernfahrausweises der praktische Grundkurs zu absolvieren. Es sind seit dem 1. Januar 2021 für alle Kategorien zwölf Stunden in jeweils drei Teilen à vier Stunden zu besuchen. Danach verlängert sich die Gültigkeit des Lernfahrausweises automatisch um ein Jahr. Der Grundkurs läuft nicht mehr aus, sondern bleibt ein Leben lang gültig. Leider ist aber ein Direkteinstieg in die Kategorie A nicht mehr möglich. Mit einem Lernfahrausweis der Kategorie A beschränkt darf man die Grundschulung nicht mit einem Fahrzeug der Kategorie A1 absolvieren.']
 },{
-  title:'Motorcycle Curve Training',
-  content:['Cornering is the most beautiful thing about motorcycling. With the right technology, safety, fun and joy increase. We practice that on this daily course. We learn to consciouslyWith high-tech and know-how, we show you how beautiful cornering can be.']
+  title:'Motorrad-Kurventraining',
+  content:['Kurvenfahren ist das Schönste beim Motorradfahren. Mit der richtigen Technik erhöht sich die Sicherheit, der Spass und die Freude. Das üben wir an diesem Tageskurs. Wir lehren, die Kurven bewusst zu realisieren und diese auf einer sicheren Linie zu durchfahren. Ziel ist, Kurven möglichst rund und dynamisch zu fahren. Mit Hightech und Know-how zeigen wir dir, wie schön Kurvenfahren sein kann.']
 }]
 
 
 let req_data = [{
-  title:'Category A1'
-  ,content:['Motorcycle helmet (tested according to ECE regulation 22)',
-  'Motorcycle gloves or gloves made from abrasion and tear-resistant material',
-  'Robust jacket and trousers made of abrasion and tear resistant material',
-  'Motorbike boots or ankle-protecting, sturdy shoes']
+  title:'Kategorie A1'
+  ,content:[`Motorradhelm (geprüft nach ECE-Reglement 22)`,`Motorradhandschuhe oder Handschuhe aus abrieb- und reissfestem Material`,`Robuste Jacke und Hose aus abrieb- und reissfestem Material`, `Motorradstiefel oder knöchelschützendes, festes Schuhwerk`]
 },{
-  title:'Category A And A Limited (35KW)',
-  content:['Motorcycle helmet (tested according to ECE regulation 22)',
-'Motorcycle gloves or gloves made from abrasion and tear-resistant material',
-'Motorcycle jacket','Motorcycle pants','Motorbike boots or ankle-protecting, sturdy shoes']
+  title:'Kategorie A und A beschränkt (35 kW)',
+  content:[`Motorradhelm (geprüft nach ECE-Reglement 22)`, `Motorradhandschuhe oder Handschuhe aus abrieb- und reissfestem Material`, `Motorradjacke`, `Motorradhose`,`Motorradstiefel oder knöchelschützendes, festes Schuhwerk`]
 }]
 
 
 let moto_data=[{
-  title:'Vehicle Cat. A',
-  content:'A 2-wheeled, 2-seater motorcycle without a sidecar with an engine power of at most 35 kW and a ratio of engine power and unladen weight of not more than 0.20 kW / kg. No motorcycle in subcategory A1.'
+  title:'Kategorie A',
+  content:'Ein Motorrad ohne Seitenwagen mit einer Motorleistung von mindestens 35 kW, zwei Sitzplätzen und einem Verhältnis von Motorleistung und Leergewicht von mehr als 0,20 kW/kg.'
 },{
-  title:'Vehicle Cat. A',
-  content:'A motorcycle without a sidecar with an engine output of at least 35 kW and two seats.'
+  title:'Kategorie A (beschränkt)',
+  content:'Ein zweirädriges, zweiplätziges Motorrad ohne Seitenwagen mit einer Motorleistung von höchstens 35 kW und einem Verhältnis von Motorleistung und Leergewicht von nicht mehr als 0,20 kW/kg. Kein Motorrad der Unterkategorie A1.'
 },{
-  title:'Vehicle Category A1',
-  content:'A two-wheel motorcycle without a sidecar with a maximum displacement of 125 cm3 and an engine output of maximum 11 kW. (For handlebars 18 years at most 50 cm3).'
+  title:'Kategorie A1',
+  content:'Ein zweirädriges Motorrad ohne Seitenwagen mit einem Hubraum von höchstens 125 cm3 und einer Motorleistung von höchstens 11 kW. Für Lenker unter 16 Jahren höchstens 50 cm3 und max. 4 kW. Nach vollendetem 16. Lebensjahr ist man automatisch dazu berechtigt, ein Motorrad mit einem Hubraum von max. 125 cm3 und max. 11 kW zu führen.'
 }]
 
 function Moto({theme}){
     return (
         <>
-          <Jumbo theme={theme} image={bike} text={'Moto'} />
+          <Jumbo theme={theme} image={bike} text={'Motorrad'} />
           <Article  theme={theme}  title={data.title} content={data.content}/>
           <VideoIframe src={'https://www.youtube.com/watch?v=MCABhYXoYrI'}/>
           <br /><br /><br /><br />
@@ -63,9 +59,9 @@ function Moto({theme}){
             card_data.map(dat => <VKUCard  theme={theme}  nobtn={true} Icon={FaMotorcycle} title={dat.title} content={dat.content} />)
           }
           <div className="topic">
-            <p className="title" style={{fontSize:'2rem', fontWeight:'normal'}}>Motorcycle Test Requirements .</p>
+            <p className="title" style={{fontSize:'2rem', fontWeight:'normal'}}>Anforderungen Motorradprüfung .</p>
             <br /><br />
-            <SlideText style={{fontSize:'1.7rem', fontWeight:'normal'}} word={'Clothing :'} classes={"title little"} />
+            <SlideText style={{fontSize:'1.7rem', fontWeight:'normal'}} word={'Bekleidung :'} classes={"title little"} />
             <br />
           </div>
           <div>
@@ -75,7 +71,7 @@ function Moto({theme}){
             
           </div>
           <div className="topic">
-            <SlideText word={'Moto :'} classes={"title little"} style={{fontSize:'1.7rem', fontWeight:'normal'}} />
+            <SlideText word={'Motorrad :'} classes={"title little"} style={{fontSize:'1.7rem', fontWeight:'normal'}} />
             <br />
           </div>
           <div>
@@ -84,7 +80,7 @@ function Moto({theme}){
             }
           </div>
           <TextImage upspace={true} background={true}  image={ImageNorm} reverse={true}>
-           <SlideText word={'Rent A Motorcycle ?'} classes="title" style={{
+           <SlideText word={'Motorrad mieten ?'} classes="title" style={{
             padding:'1.1rem',
             width:'70%',
             paddingBottom:0
@@ -96,7 +92,7 @@ function Moto({theme}){
             padding:'1.1rem',
            lineHeight:1.5
       
-           }}>You don't have your own motorcycle yet? Would you like to rent one for the course or even buy one later? Get in touch with our partner Hauptlin . He will provide a suitable motorcycle. For a reservation request, please contact Hauptlin directly: info@hauptlin.ch If you definitely decide to rent a motorcycle, you declare that you agree to the General Terms and Conditions of Hauptlin.</p>
+           }}>Du besitzt noch kein eigenes Motorrad? Du möchtest für den Kurs eines mieten oder später sogar eines kaufen? Melde dich bei unserem Partner Hauptlin [link to https://www.hauptlin.ch/de/index.html]. Er wird dir ein passendes Motorrad bereitstellen. Für eine Reservationsanfrage direkt an Hauptlin wenden: info@hauptlin.ch [mail to info@hauptlin.ch] Wenn du dich definitiv entscheidest, ein Motorrad zu mieten, erklärst du dich mit den AGB [link to https://cdn.fahrschule-star.ch/wp-content/uploads/2018/01/Allgemeine-Vertragsbestimmungen-Miete-Fahrzeug.pdf -&gt; tbd] von Hauptlin einverstanden.</p>
            <br /><br />
           </TextImage>
         </>

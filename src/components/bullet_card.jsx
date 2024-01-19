@@ -14,7 +14,8 @@ function BulletCard({title, content}){
                 content && content.map(cont=><li>{cont}</li>)
             }
                     </ul></div>
-           <p style={{color:'black'}}>The protective requirements for clothing must also be met when wearing rainwear..</p>
+           <p style={{color:'black'}}>Motorradstiefel oder knöchelschützendes, festes Schuhwerk
+Die Schutzanforderungen an die Bekleidung müssen auch beim Tragen der Regenbekleidung erfüllt sein.</p>
         </div>
         </div>
        
