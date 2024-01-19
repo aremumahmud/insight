@@ -5,42 +5,43 @@ import PriceCard from "./pricecard"
 
 let data = {
   title:'Pay Comfortably In Installments For All Driving Hours .',
-  content:[`In today's era of mobility, it is almost mandatory to take the car test. On the way to acquiring the driver's license, you have to overcome a few hurdles such as the financial investment for driving lessons, theory testing, traffic studies and driving courses.`,
-` The financial situation poses problems for many young people. The professional and private pressure to pass the exam as quickly as possible and the lack of financial resources are major obstacles.`,
-` Studies have shown that, on average, you need a few hours more driving if you attend the driving school at irregular intervals. We offer a fair and customer-oriented solution to this problem - purchase on installments. Request driving lessons online and step on the gas. We will help you to pass the exam as soon as possible. You can only concentrate on driving and don't have to worry about the financial means.`,
-` We shoot you the money and you pay back the amount comfortably in installments (up to 12 months). You do NOT have to sign a contract or anything like that.The only thing you have to do is choose a package online, add it to the shopping cart, select installment purchase, register and you're done. (positive credit check required) The lesson prices for paying in installments for the machine and the manually switched car are CHF 89 .- / lesson and in a 10-person subscription CHF 890.- The financial situation poses problems for many young people. The professional and private pressure to pass the exam as quickly as possible and the lack of financial resources are a major obstacle. Studies have shown that, on average, you need a few hours more driving if you attend the driving school at irregular intervals.`]
-}
+  content:[`In der heutigen Zeit der Mobilität ist es beinahe Pflicht, die Autoprüfung abzulegen. Auf dem Weg zum Erwerb des Führerausweises muss man aber einige Hürden bewältigen wie die finanzielle Investition in Fahrstunden, Theorieprüfung, Verkehrskunde und Fahrkurse. `,
+` Die finanzielle Situation stellt viele junge Menschen vor Probleme. Der berufliche und private Druck, die Prüfung so schnell wie möglich zu bestehen, und die fehlenden finanziellen Mittel sind ein grosses Hindernis.`,
+` Studien haben ergeben, dass man im Durchschnitt einige Fahrstunden mehr benötigt, wenn man in unregelmässigen Abständen die Fahrschule besucht. Wir bieten für diese Problematik eine faire und kundenorientierte Lösung: den Kauf auf Raten. Buche online Fahrstunden und gib Gas. Wir helfen dir, die Prüfung so rasch wie möglich zu bestehen. Dabei kannst du dich nur auf das Fahren konzentrieren und brauchst dir keine Sorgen um die finanziellen Mittel zu machen.`,
+` Wir schiessen dir das Geld vor, und du bezahlst bequem in Raten (innerhalb zwölf Monaten) den Betrag zurück. Dabei musst du keinen Vertrag oder derartiges unterzeichnen. Das Einzige, was du tun musst, ist online ein Paket wählen, in den Warenkorb legen, Ratenkauf anwählen, anmelden und fertig (positive Bonitätsprüfung wird vorausgesetzt). Die Lektionspreise für die Ratenzahloption betragen für die Autofahrausbildung (Schaltung oder Automat) CHF 89.– pro Lektion und im 10er-Abo CHF 890.–.`]}
 
 let pricing_data = [{
-  title:'PRICES CAR (GEAR AND AUTOMAT)',
-  subtitle:'NORMAL',
-  content:['Individual lesson CHF 85.-','Double lesson CHF 170.-','10 subscription CHF 80.- per lesson (800.-)','20 subscription CHF 75.- per lesson (1500.-)']
+  title:'FAHRLEKTIONEN AUTO',
+  subtitle:'AB CHF 75.-',
+  content:[`Einzellektion: CHF 85.–`,`Doppellektion: CHF 170.–`,`10er-Abo: CHF 800.– (CHF 80.– pro Lektion)`,`20er-Abo: CHF 1500.– (CHF 75.– pro Lektion)`]
 },{
-  title:'PRICE CONTROL, BPT 121 AND REFRESHING',
-  subtitle:'NORMAL',
-  content:['Individual lesson CHF 85','Double lesson CHF 170','10 subscription CHF 800','20 subscription CHF 1500']
+  title:'KONTROLLFAHRT, BPT 121 UND AUFFRISCHUNG',
+  subtitle:'PREISE',
+  content:['Einzellektion: CHF 85.–','Doppellektion: CHF 170.–','10er-Abo: CHF 800.–','20er-Abo: CHF 1500.–']
 },{
-  title:'PRICE MOTORCYCLE',
-  subtitle:'NORMAL',
-  content:['Cat A driving lesson 45min. CHF 90.-','Cat A test drive 60min. CHF 100.-','Cat A1 driving lesson 45min. CHF 80.-','Cat A1 test drive 60min. CHF 90.-','Basic motorcycle course per course CHF 120.']
+  title:'MOTORRAD',
+  subtitle:'PREISE',
+  content:['Kat. A: CHF 90.– für Fahrlektion à 45 Min.','Kat. A: CHF 100.– für Prüfungsfahrt à 60 Min.','Kat. A1: CHF 80.– für Fahrlektion à 45 Min.','Kat. A1: CHF 90.– für Prüfungsfahrt à 60 Min.','Motorrad-Grundkurs: CHF 120.– pro Kursteil']
 },{
-  title:'PREISE AUTO (SCHALTUNG UND AUTOMAT)',
-  subtitle:'SOCIAL MEDIA',
-  content:['Individual lesson CHF 85.-','Double lesson CHF 160.-','subscription CHF 75.- per lesson (750.-)',' subscription CHF 70.- per lesson (1400.-)']
+  title:'Administrationsgebühr',
+  subtitle:'CHF 100.-',
+  content:['Fallen nur einmalig an.',`Fallen erst bei beginn der Ausbildung an.`,`Decken jeglichen administrativen Aufwand ab.`,`Sind bei der Probelektion noch nicht zu begleichen.`]
   ,book:true
 },{
-  title:'PRICE EMERGENCY COURSE NHK (INCLUDING ID)',
-  content:[`We offer the first aid course (NHK) in the Baden region at an affordable price. For only 69.- (including ID) you learn first aid, which is mandatory for the acquisition of a driver's license .`],subtitle:"CHF 69.-",book:true
+  title:'NOTHELFERKURS (NHK)',
+  content:[`Den Nothelferkurs (NHK) bieten wir für die Region Aarau, Baden und Zürich zu einem günstigen Preis an. Für nur CHF 69.– (inklusive Ausweis) erlernt man die Erste Hilfe, welche für den Erwerb eines Führerausweises obligatorisch ist.
+
+  `],subtitle:"CHF 69.-",book:true
 },{
-  title:'PRICE TRAVEL CUSTOMER LESSONS VKU',
-  content:['Traffic in the Baden region is like sand at the sea. To spice up this dry lesson so that you can get the course behind you with a lot of fun in a short time, we have hired a specialist who is a real ace in the field of VKU.'],subtitle:"CHF 140.-",book:true
+  title:'VERKEHRSKUNDEUNTERRICHT (VKU)',
+  content:['Verkehrskunde (VKU) in der Region Baden und Zürich gibt es wie Sand am Meer. Um diesen trockenen Unterricht etwas aufzupeppen, haben wir unsere Theorielokale so eingerichtet, dass du dich wie zu Hause fühlst, und den Unterricht so kurzweilig wie möglich gestaltet. Ja, es bleibt bei CHF 140.-. Es fallen keine zusätzlichen Kosten an.'],subtitle:"CHF 140.-",book:true
 }]
 
 function Pricing({theme}){
     return (
         <>
-          <Jumbo theme={theme}  image={price} text={'Pricing'} />
-          <Article theme={theme}  warning={'Drive today - pay tomorrow'} title={data.title} content={data.content}/>
+          <Jumbo theme={theme}  image={price} text={'Preise'} />
+          <Article theme={theme}  warning={'Heute fahren - morgen bezahlen'} title={data.title} content={data.content}/>
          {
           pricing_data.map(prices=><PriceCard theme={theme}  book={prices.book} title={prices.title} subtitle={prices.subtitle} content={prices.content||[]} /> )
          }
