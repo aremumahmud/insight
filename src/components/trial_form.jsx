@@ -17,7 +17,7 @@ function TrialForm({theme}){
     return (
         <div className={theme?"trial_form light_trial":"trial_form"}>
           <div className="form_title">
-          Request A Trial Lesson Now .
+          Fordere jetzt eine Probelektion an .
           </div>
           <form action="">
             <div className="form_entry">
@@ -29,90 +29,90 @@ function TrialForm({theme}){
                 <input type="text" placeholder='Type here' />
             </div>
             <div className="form_entry">
-                <label htmlFor="">Date of Birth</label>
+                <label htmlFor="">Geburtsdatum</label>
                 <input type="date" placeholder='mm/dd/yyyy' />
             </div>
             <div className="form_entry">
-                <label htmlFor="">Phone Number</label>
-                <input type="tel" placeholder='Phone Number' />
+                <label htmlFor="">Telefonnummer*</label>
+                <input type="tel" placeholder='Telefonnummer*' />
             </div>
             <div className="form_entry">
-                <label htmlFor="">Where do you want to go?</label>
+                <label htmlFor="">Wo möchtest du fahren?</label>
                 <select>
-                    <option>Please select</option>
+                    <option>Bitte auswahlen</option>
                 </select>
             </div>
             <div className="form_entry">
-                <label htmlFor="">Category<sup>*</sup></label>
+                <label htmlFor="">Kategorie*<sup>*</sup></label>
                 <select>
-                    <option>Please select</option>
+                    <option>Bitte auswahlen</option>
                 </select>
             </div>
             <div className="form_entry">
-                <label htmlFor="">I Am Available</label>
+                <label htmlFor="">Ich bin Verfügbar</label>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Select all</p>
+                    <p>Jeden Tag</p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Morning ( 08:00 - 12:00 )</p>
+                    <p>Morgens ( 08:00 - 12:00 )</p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Afternoon ( 12:00 - 17:00 ) </p>
+                    <p>Vor-/Nachmittags ( 12:00 - 17:00 ) </p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Evening  ( 17:00 - 21:00 )</p>
+                    <p>Abends  ( 17:00 - 21:00 )</p>
                 </div>
                 
             </div>
             <div className="form_entry">
-                <label htmlFor="">Select Day</label>
+                <label htmlFor="">Tag auswählen</label>
                 <div className="grid">
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Select Day</p>
+                    <p>Tag auswählen</p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Monday</p>
+                    <p>Montag</p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Tuesday </p>
+                    <p>Dienstag </p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Wednesday</p>
+                    <p>Mittwoch</p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Thursday</p>
+                    <p>Donnerstag</p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Friday</p>
+                    <p>Freitag</p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Saturday</p>
+                    <p>Samstag</p>
                 </div>
                 <div className="check_me">
                     <input type="checkbox" name="" id="" />
-                    <p>Sunday</p>
+                    <p>Sonntag(nur Motorrad)</p>
                 </div>
                 </div>
                
                 
             </div>
             <div className="form_entry" style={{marginBottom:0}}>
-                <label htmlFor="">Message</label> <br/>
+                <label htmlFor="">Nachricht</label> 
                 <textarea name="" id="" cols="30" rows="10" placeholder="Type here"></textarea>
             </div>
             <div className="button1" style={{marginLeft:'1rem',marginTop:0}}>
-        Submit
+        Senden
        </div>
           </form>
         </div>

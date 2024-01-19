@@ -19,12 +19,14 @@
 
 .trial_form form .form_entry input,
 select {
-    background-color: hsla(0, 0%, 100%, .6);
+    background: #2B2D42;
+    /* background-color: hsla(0, 0%, 100%, .6); */
     outline: none;
     width: 95%;
     padding: .5rem;
     border: none;
     border-radius: .75rem;
+    box-shadow: inset 0px 4px 46px -31px #090c15;
 }
 
 .form_entry .check_me input {

@@ -6,7 +6,7 @@ import TrialForm from "./trial_form"
 function CheckTrip({theme}){
     return (
         <>
-          <Jumbo theme={theme} image={card} text={'Trial Lesson'} />
+          <Jumbo theme={theme} image={card} text={'Probestunde'} />
           <br /> <br />
           <TrialForm theme={theme} />
           </>

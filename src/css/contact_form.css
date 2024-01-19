@@ -1,10 +1,11 @@
 .contact_form input,
 textarea {
-    width: 90%;
-    padding: 1rem;
+    width: 100%;
+    padding: .7rem;
     margin-bottom: 1rem;
-    border-radius: 24px;
-    background-color: hsla(0, 0%, 100%, .6);
+    border-radius: 1rem;
+    background: #2B2D42;
+    ;
     color: #fff;
     outline: none;
     border: none;

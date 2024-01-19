@@ -5,7 +5,7 @@ import Article from "./article"
 
 
 let data = {
-  title:'Preparation for the inspection trip or inspection test .',
+  title:'Vorbereitung auf die Kontrollfahrt bzw. Kontrollprüfung .',
   content:[`We offer serious preparation for the inspection trip or inspection test
   Converting foreign driving licenses into Swiss ones
   Driver's licenses.`,`If you convert your foreign driving license into a Swiss one
@@ -22,7 +22,7 @@ let data = {
 function Inspect({theme}){
     return (
         <>
-          <Jumbo theme={theme} image={first_aid} text={'Check Trip'} />
+          <Jumbo theme={theme} image={first_aid} text={'Kontrollfahrt'} />
           <Article theme={theme}  title={data.title} content={data.content}/>
         
         </>

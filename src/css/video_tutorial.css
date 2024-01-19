@@ -1,7 +1,7 @@
 .video_frame {
     height: 50vh;
     width: 90%;
-    border-radius: 40px;
+    border-radius: 1rem;
 }
 
 .frame_wrapper {
