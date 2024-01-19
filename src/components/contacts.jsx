@@ -35,7 +35,7 @@ function ContactUs({theme}){
     return (
         <>
           <Jumbo theme={theme} image={card} text={'Kontakt'} />
-          <Article theme={theme} title={'You can contact us at :'}>
+          <Article theme={theme} title={'Sie können uns unter kontaktieren :'}>
             {
                 contact_data.map(contact=>  <ContactCard  theme={theme} title={contact.title} address={contact.address} email={contact.email} phone={contact.phone} />)
             }
