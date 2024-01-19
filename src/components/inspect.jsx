@@ -6,16 +6,16 @@ import Article from "./article"
 
 let data = {
   title:'Vorbereitung auf die Kontrollfahrt bzw. Kontrollprüfung .',
-  content:[`We offer serious preparation for the inspection trip or inspection test
-  Converting foreign driving licenses into Swiss ones
-  Driver's licenses.`,`If you convert your foreign driving license into a Swiss one
-  If you want to exchange, you should seriously prepare for the inspection trip or
-  Prepare control test. A failed exam cannot be repeated
-  so you would have to start the entire exam from the beginning.`,`Every year many foreign driving license holders come to us for help
-  obtained when rewriting. We prepare you seriously for this
-  Inspection trip/inspection test. You will learn how to drive safely in Swiss
-  Roads in a modern vehicle with an automatic transmission. After passing
-  You are also allowed to drive vehicles with a manual transmission during the test.`,`Melde dich bei uns, wir helfen dir gerne weiter!`]
+  content:[`Wir bietet eine seriöse Vorbereitung auf die Kontrollfahrt bzw. Kontrollprüfung für die
+  Umschreibung von ausländischen Führerausweisen in Schweizerische
+  Führerausweise.`,`Wenn du deinen ausländischen Führerausweis in einen Schweizerischen
+  umtauschen möchtest, solltest du dich ernsthaft auf die Kontrollfahrt bzw.
+  Kontrollprüfung vorbereiten. Eine nicht bestandene Prüfung kann nicht wiederholt
+  werden, sodass du mit der gesamten Prüfung von vorne beginnen müsstest.`,`Jedes Jahr kommen viele Besitzer ausländischer Führerausweise zu uns, um Hilfe
+  bei der Umschreibung zu erhalten. Wir bereiten dich seriös auf die
+  Kontrollfahrt/Kontrollprüfung vor. Du lernst das sichere Lenken auf Schweizer
+  Strassen in einem modernen Fahrzeug mit Automatikgetriebe. Nach bestandener
+  Prüfung darfst du auch Fahrzeuge mit Handschaltung fahren.`,`Melde dich bei uns, wir helfen dir gerne weiter!`]
 }
 
 

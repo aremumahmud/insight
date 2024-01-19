@@ -44,7 +44,9 @@ function HeroSection({theme}){
             <SlideText word={'We learn to drive easy and safe .'} style={{
                 fontSize: '3rem',
                 lineHeight:'3.2rem',
-                fontWeight:'300'
+                fontWeight:'300',
+                mixBlendMode: 'darken'
+                
             }}/>
             <br />
             <div className='subtitle'>

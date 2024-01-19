@@ -30,7 +30,7 @@ const ParallaxImage = ({tags , title , image, theme}) => {
   return (
     <div className={theme?"parallax-container light_parallax":'parallax-container'}>
       <div className="info">
-        <SlideText theme={theme} classes={'title'} word={title|| ''} style={theme?{color:'#fff'}:{color:'#090c15'}} />
+        <SlideText theme={theme} classes={'title'} word={title|| ''} style={theme?{color:'#fff'}:{color:'#fff'}} />
         {/* <div className="title">{}</div> */}
         <div className="tags">
           {

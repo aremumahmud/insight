@@ -26,6 +26,7 @@ import Register from './components/register';
 import SignIn from './components/Signin';
 // import Render from './components/test2';
 import Inspect from './components/inspect';
+import Spli3D from './components/spline';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <div className="App">
+     
       <Spiral color_scheme={mode} />
       {/* <ParticleFall /> */}
       <Nav theme={mode} isopen={isopen}/>
@@ -48,7 +50,7 @@ function App() {
       {/* <FirstAid /> */}
       <Router>
         <Routes>
-          <Route path={'/'} element={   <Home theme={mode} />} />
+          <Route path={'/'} element={ <div> <Spli3D /> <Home theme={mode} /></div>} />
           <Route path={'/inspection_trip'} element={  <Inspect theme={mode} /> } />
           <Route path={'/vku'} element={   <VKU theme={mode} />} />
           <Route path={'/register'} element={   <Register theme={mode} />} />

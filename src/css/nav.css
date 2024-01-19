@@ -51,7 +51,7 @@
 .nav_bar .contact .image {
     height: 3.5rem;
     width: 3.5rem;
-    background: hsl(0, 0%, 100%);
+    /* background: hsl(0, 0%, 100%); */
     border-radius: 50%;
     display: flex;
     align-items: center;
