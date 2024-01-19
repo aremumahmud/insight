@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-     
+      <Spli3D />
       <Spiral color_scheme={mode} />
       {/* <ParticleFall /> */}
       <Nav theme={mode} isopen={isopen}/>
@@ -50,7 +50,7 @@ function App() {
       {/* <FirstAid /> */}
       <Router>
         <Routes>
-          <Route path={'/'} element={ <div> <Spli3D /> <Home theme={mode} /></div>} />
+          <Route path={'/'} element={ <div> <Home theme={mode} /></div>} />
           <Route path={'/inspection_trip'} element={  <Inspect theme={mode} /> } />
           <Route path={'/vku'} element={   <VKU theme={mode} />} />
           <Route path={'/register'} element={   <Register theme={mode} />} />

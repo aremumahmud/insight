@@ -4,7 +4,7 @@ export default function Spli3D() {
   return (
     <div style={{
         position: 'fixed',
-        zIndex:'-1',
+        zIndex:'-55',
         height:'100%',
         width:'100%',
         
