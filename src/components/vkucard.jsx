@@ -26,7 +26,7 @@ function VKUCard({title, content , nobtn , Icon}){
             <div className="vku_entails">{
                 content && content.map(cont=><p>{cont}</p>)
             }</div>
-            {!nobtn && <div className="button1 back_color" >Book VKU</div>}
+            {!nobtn && <div className="button1 back_color" >Buchen</div>}
             </div>
         </div>
         </div>

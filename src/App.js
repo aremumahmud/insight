@@ -31,7 +31,7 @@ import Inspect from './components/inspect';
 function App() {
 
   let [isopen , setnav] = useState(false)
-  let [mode , setMode] = useState(true)
+  let [mode , setMode] = useState(false)
 
   useEffect(()=>{
     document.body.style.background = mode?'#ffffff':'#090c15'

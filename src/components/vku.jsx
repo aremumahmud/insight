@@ -6,39 +6,38 @@ import VKUCard from "./vkucard"
 import {FaRoad} from 'react-icons/fa'
 
 let data = {
-  title:'On VKU In The Baden Region and Zürich .',
-  content: ['The compulsory traffic science lessons (VKU) consist of 4 double lessons and can be attended to accompany the practical driving lessons.',
-'However, Traffic customer lessons (VKU) may only be attended with a valid learning driving license!',
-'For legal reasons, the double lessons must take place on four different days. Register now and benefit from our cheap course offers']
+  title:'VKU in der Region Baden und Zürich .',
+  content: ['Der obligatorische Verkehrskundeunterricht (VKU) besteht aus vier Doppellektionen und kann begleitend zum praktischen Fahrunterricht besucht werden. Es empfiehlt sich jedoch, den VKU möglichst früh zu besuchen, damit wichtige Informationen bei der praktischen Fahrausbildung angewendet werden können.',`Der VKU darf nur mit einem gültigen Lernfahrausweis besucht werden. Dieser muss in den VKU mitgebracht werden.
+  Seit dem ersten Januar 2021, dürfen die Kurse auch an zwei Abenden à vier Stunden durchgeführt werden.`]
 }
 
 let card_data = [
   {
-    title:'Course Part',
-    content:['Book VKU',
-    'Functions of the sensory organs'],
+    title:'Kursteil',
+    content:['Gefahrenlehre/Sicherheitslehre',
+    'Funktionen der Sinnesorgane'],
     image:''
   },
   {
-    title:'Course Part',
-    content:[`Partner customer`,
-      'Street customer',
-      'Weather',
-     ' Times'],
+    title:'Kursteil',
+    content:[`Partnerkunde`,
+      'Strassenkunde',
+      'Witterung',
+     'Zeiten'],
     image:''
   },
   {
-    title:'Course Part',
-    content:['Condition of the vehicle',
-    'Forces when driving',
-    'Traffic movement theory'],
+    title:'Kursteil',
+    content:['Zustand des Fahrzeugs',
+    'Kräfte beim Fahren',
+    'Verkehrsbewegungslehre'],
     image:''
   },
   {
-    title:'Course Part',
-    content:['Drivability',
-'Environmentally conscious',
-'Driving'],
+    title:'Kursteil',
+    content:['Fahrfähigkeit',
+'Umweltbewusstes Fahren',
+'Fahren'],
     image:''
   }
 ]
@@ -46,7 +45,7 @@ let card_data = [
 function VKU({theme}){
     return (
         <>
-          <Jumbo theme={theme} image={traffic} text={'Traffic Studies (VKU)'} />
+          <Jumbo theme={theme} image={traffic} text={'VERKEHRSKUNDEUNTERRICHT (VKU)'} />
           <Article theme={theme} title={data.title} content={data.content}/>
           {
             card_data.map(dat => <VKUCard theme={theme} Icon={FaRoad} title={dat.title} content={dat.content} />)
@@ -59,10 +58,10 @@ function VKU({theme}){
             paddingBottom:0
       
            }}>
-           You can easily book your traffic studies online .
+           Jetzt Termin für den VKU buchen .
            </div>
            <div className="button back_color" style={{ margin:'1.1rem'}}>
-           Book Course
+           Buchen
            </div>
            <br /><br />
           </TextImage>
