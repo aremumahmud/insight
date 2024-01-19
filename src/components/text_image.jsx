@@ -15,7 +15,7 @@ function TextImage({reverse ,title, text ,image ,background, children,upspace}){
       }, []);
     
     return (
-<div className="text_image" style={{flexDirection:reverse?'column-reverse':'column',background:background?'hsla(0, 0%, 100%, .6)':'transparent'}}>
+<div className="text_image" style={{flexDirection:reverse?'column-reverse':'column',background:background?'#2B2D42':'transparent'}}>
     <div>
         <SlideText word={title} classes={'text_title'}/>
     

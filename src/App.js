@@ -34,7 +34,7 @@ function App() {
   let [mode , setMode] = useState(false)
 
   useEffect(()=>{
-    document.body.style.background = mode?'#ffffff':'#090c15'
+    document.body.style.background = mode?'#ffffff':'#0A0A0A'
     document.body.style.color = mode?'#090c15':'#ffffff'
 
   },[mode])
