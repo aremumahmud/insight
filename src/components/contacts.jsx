@@ -34,7 +34,7 @@ let contact_data = [{
 function ContactUs({theme}){
     return (
         <>
-          <Jumbo theme={theme} image={card} text={'Contact Us'} />
+          <Jumbo theme={theme} image={card} text={'Kontakt'} />
           <Article theme={theme} title={'You can contact us at :'}>
             {
                 contact_data.map(contact=>  <ContactCard  theme={theme} title={contact.title} address={contact.address} email={contact.email} phone={contact.phone} />)
@@ -44,8 +44,8 @@ function ContactUs({theme}){
           
             
           </Article>
-           <Article  theme={theme} top={true} title={'Contact us'} content={[
-              'In order that for the most part, any one of us will come to the exercise of any kind of employment except to take advantage of the objectives from it. The pain will condemn in pleasure, but it wants to be clumsy. Blacks are the exception.'
+           <Article  theme={theme} top={true} title={'Kontaktiere uns'} content={[
+              'Damit zum größten Teil jeder von uns zur Ausübung jeder Art von Beschäftigung kommt, außer um die daraus resultierenden Ziele zu nutzen. Der Schmerz wird im Vergnügen verdammen, aber er will ungeschickt sein. Schwarze sind die Ausnahme.'
            ]}>
             <div  className={theme?"contact_card light_card":"contact_card"}>
             <div className="socials">
@@ -53,10 +53,10 @@ function ContactUs({theme}){
                 <p>Email: <span><a href={"mailto:" + email}>{email}</a></span></p>
             </div>
             <div>
-                <p>Telephone: <span><a href={"tel:"+phone}>{phone}</a></span></p>
+                <p>Telefon: <span><a href={"tel:"+phone}>{phone}</a></span></p>
             </div>
             <div>
-                <p>Web: <span><a href={'https://'+web}>{web}</a></span></p>
+                <p>Netz: <span><a href={'https://'+web}>{web}</a></span></p>
             </div>
           </div>
             </div>

@@ -16,12 +16,12 @@ function ContactForm({theme}){
     return (
       <div className={theme?"contact_form light_form":'contact_form'}>
        <input type="text" name="" id="" placeholder='Name'/>
-       <input type="email" name="" id="" placeholder='Email' />
+       <input type="email" name="" id="" placeholder='E-mail-Adresse' />
        <input type="text" name="" id="" placeholder='Subject' />
-       <input type="tel" name="" id="" placeholder='Phone Number'/>
-       <textarea placeholder='Message' name="" id="" cols="30" rows="10"></textarea>
+       <input type="tel" name="" id="" placeholder='Telefonnummer'/>
+       <textarea placeholder='Nachricht' name="" id="" cols="30" rows="10"></textarea>
        <div className="button ">
-        Send Messages
+        Mitteilung senden
        </div>
       </div>
     )

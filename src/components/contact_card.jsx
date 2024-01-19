@@ -26,7 +26,7 @@ function ContactCard({title , address , email , phone,theme}){
                 <p>Email: <span><a href={"mailto:" + email}>{email}</a></span></p>
             </div>
             <div>
-                <p>Telephone: <span><a href={"tel:"+phone}>{phone}</a></span></p>
+                <p>Telefon: <span><a href={"tel:"+phone}>{phone}</a></span></p>
             </div>
           </div>
         </div>
