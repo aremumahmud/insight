@@ -3,7 +3,7 @@ import '../css/pricecard.css'
  import ScrollReveal from 'scrollreveal';
 import SlideText from './SlidedText';
 
-function PriceCard({title,subtitle, content,book}){
+function PriceCard({title,subtitle, content,book, btn_txt}){
    
     useEffect(() => {
         // Configure the scroll reveal animation
@@ -26,7 +26,7 @@ function PriceCard({title,subtitle, content,book}){
                 content && content.map(cont=><li>{cont}</li>)
             }
                     </ul></div>
-                    <div className="button1 back_color" >{!book?'Request A Trial':'Book Course'}</div>
+                    <div className="button1 back_color" >{btn_txt?btn_txt:!book?'Request A Trial':'Book Course'}</div>
           </div>
         </div>
        

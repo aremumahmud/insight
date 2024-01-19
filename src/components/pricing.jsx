@@ -11,28 +11,34 @@ let data = {
 ` Wir schiessen dir das Geld vor, und du bezahlst bequem in Raten (innerhalb zwölf Monaten) den Betrag zurück. Dabei musst du keinen Vertrag oder derartiges unterzeichnen. Das Einzige, was du tun musst, ist online ein Paket wählen, in den Warenkorb legen, Ratenkauf anwählen, anmelden und fertig (positive Bonitätsprüfung wird vorausgesetzt). Die Lektionspreise für die Ratenzahloption betragen für die Autofahrausbildung (Schaltung oder Automat) CHF 89.– pro Lektion und im 10er-Abo CHF 890.–.`]}
 
 let pricing_data = [{
+  btn_txt:"Lektion buchen",
   title:'FAHRLEKTIONEN AUTO',
   subtitle:'AB CHF 75.-',
   content:[`Einzellektion: CHF 85.–`,`Doppellektion: CHF 170.–`,`10er-Abo: CHF 800.– (CHF 80.– pro Lektion)`,`20er-Abo: CHF 1500.– (CHF 75.– pro Lektion)`]
 },{
+  btn_txt:"Lektion buchen",
   title:'KONTROLLFAHRT, BPT 121 UND AUFFRISCHUNG',
   subtitle:'PREISE',
   content:['Einzellektion: CHF 85.–','Doppellektion: CHF 170.–','10er-Abo: CHF 800.–','20er-Abo: CHF 1500.–']
 },{
+  btn_txt:"Lektion buchen",
   title:'MOTORRAD',
   subtitle:'PREISE',
   content:['Kat. A: CHF 90.– für Fahrlektion à 45 Min.','Kat. A: CHF 100.– für Prüfungsfahrt à 60 Min.','Kat. A1: CHF 80.– für Fahrlektion à 45 Min.','Kat. A1: CHF 90.– für Prüfungsfahrt à 60 Min.','Motorrad-Grundkurs: CHF 120.– pro Kursteil']
 },{
+  btn_txt:"CHF 100.-",
   title:'Administrationsgebühr',
   subtitle:'CHF 100.-',
   content:['Fallen nur einmalig an.',`Fallen erst bei beginn der Ausbildung an.`,`Decken jeglichen administrativen Aufwand ab.`,`Sind bei der Probelektion noch nicht zu begleichen.`]
   ,book:true
 },{
+  btn_txt:"Kurs buchen",
   title:'NOTHELFERKURS (NHK)',
   content:[`Den Nothelferkurs (NHK) bieten wir für die Region Aarau, Baden und Zürich zu einem günstigen Preis an. Für nur CHF 69.– (inklusive Ausweis) erlernt man die Erste Hilfe, welche für den Erwerb eines Führerausweises obligatorisch ist.
 
   `],subtitle:"CHF 69.-",book:true
 },{
+  btn_txt:"Kurs buchen",
   title:'VERKEHRSKUNDEUNTERRICHT (VKU)',
   content:['Verkehrskunde (VKU) in der Region Baden und Zürich gibt es wie Sand am Meer. Um diesen trockenen Unterricht etwas aufzupeppen, haben wir unsere Theorielokale so eingerichtet, dass du dich wie zu Hause fühlst, und den Unterricht so kurzweilig wie möglich gestaltet. Ja, es bleibt bei CHF 140.-. Es fallen keine zusätzlichen Kosten an.'],subtitle:"CHF 140.-",book:true
 }]
@@ -43,7 +49,7 @@ function Pricing({theme}){
           <Jumbo theme={theme}  image={price} text={'Preise'} />
           <Article theme={theme}  warning={'Heute fahren - morgen bezahlen'} title={data.title} content={data.content}/>
          {
-          pricing_data.map(prices=><PriceCard theme={theme}  book={prices.book} title={prices.title} subtitle={prices.subtitle} content={prices.content||[]} /> )
+          pricing_data.map(prices=><PriceCard theme={theme} btn_txt={prices.btn_txt|| false}  book={prices.book} title={prices.title} subtitle={prices.subtitle} content={prices.content||[]} /> )
          }
           
         </>
