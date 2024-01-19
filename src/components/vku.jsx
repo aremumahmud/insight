@@ -45,7 +45,7 @@ let card_data = [
 function VKU({theme}){
     return (
         <>
-          <Jumbo theme={theme} image={traffic} text={'VERKEHRSKUNDEUNTERRICHT'} />
+          <Jumbo theme={theme} image={traffic} text={'VKU'} />
           <Article theme={theme} title={data.title} content={data.content}/>
           {
             card_data.map(dat => <VKUCard theme={theme} Icon={FaRoad} title={dat.title} content={dat.content} />)
