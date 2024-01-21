@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Spli3D /> */}
+      <Spli3D />
       {/* <MyThreeScene /> */}
       <Spiral color_scheme={mode} />
       {/* <ParticleFall /> */}
