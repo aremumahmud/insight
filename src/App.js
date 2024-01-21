@@ -27,6 +27,7 @@ import SignIn from './components/Signin';
 // import Render from './components/test2';
 import Inspect from './components/inspect';
 import Spli3D from './components/spline';
+//import MyThreeScene from './components/Spli2';
 
 
 function App() {
@@ -42,7 +43,8 @@ function App() {
 
   return (
     <div className="App">
-      <Spli3D />
+      {/* <Spli3D /> */}
+      {/* <MyThreeScene /> */}
       <Spiral color_scheme={mode} />
       {/* <ParticleFall /> */}
       <Nav theme={mode} isopen={isopen}/>

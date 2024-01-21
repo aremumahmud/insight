@@ -4,6 +4,7 @@
     "private": true,
     "dependencies": {
         "@react-three/fiber": "^8.15.12",
+        "@splinetool/loader": "^1.0.30",
         "@splinetool/react-spline": "^2.2.6",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",

@@ -11,27 +11,27 @@ import {ParallaxProvider , Parallax} from 'react-scroll-parallax'
 
 
 let data  = [{
-    title: 'First Aid',
-    tags: ['Health' , 'Life'],
+    title: 'Nothelfer',
+    tags: ['Gesundheit' , 'Leben'],
     image: first_aid
   },{
-    title: 'Driving And Traffic Rules',
-    tags: ['Driving' , 'Traffic' , "Safe"],
+    title: 'Lerne Auto fahren und die Verkehrsregeln',
+    tags: ['Fahren' , 'Verkehr' , "Sicher"],
     image: driving_traffic
   },
   {
-    title: 'Traffic studies (VKU) in the Baden Region',
-    tags: ['VKU' , 'Traffic' , "Baden"],
+    title: 'Buche deine Termine für den Verkehrskundeunterricht (VKU) in deiner Region',
+    tags: ['VKU' , 'Verkehr' , "Baden"],
     image: traffic
   },
   {
-    title: 'Motorcycle course for the Aarau, Baden and Zurich region',
-    tags: ['Motor' , 'Aarau' , "Baden"],
+    title: 'Motorradkurs für die Region Aarau, Baden und Zürich',
+    tags: ['Motorrad' , 'Aarau' , "Baden"],
     image: bike
   },
   {
-    title: 'Price: Drive today - pay tomorrow',
-    tags: ['Price' , 'Driving' ],
+    title: 'Preise: Drive today - pay tomorrow',
+    tags: ['Preise' , 'Farhen' ],
     image: price
   },
   {

@@ -41,7 +41,7 @@ function HeroSection({theme}){
             <span> .</span>
 
             </div> */}
-            <SlideText word={'We learn to drive easy and safe .'} style={{
+            <SlideText word={'Wir lernen, einfach und sicher zu fahren .'} style={{
                 fontSize: '3rem',
                 lineHeight:'3.2rem',
                 fontWeight:'300',
@@ -50,16 +50,16 @@ function HeroSection({theme}){
             }}/>
             <br />
             <div className='subtitle'>
-                <span>We are a driving </span>
-                <span>agency </span>
-                <span>with world--class <br /> </span>
-                <span>proffesionals, </span>
-                <span>who train </span>
-                <span>and <br /> develop drivers.</span>
+                <span>Wir sind eine</span>
+                <span>Fahragentur </span>
+                <span>mit Weltklasseniveau Profis, <br /> </span>
+
+                <span> die trainieren </span>
+                <span>und <br /> Treiber entwickeln.</span>
             </div>
             <br />
             <div className="cta">
-                Get Started
+            Loslegen
             </div>  
             </div>
             
