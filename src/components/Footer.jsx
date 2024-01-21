@@ -34,7 +34,7 @@ function Footer({theme}){
             <br />
             <div className='pages'>
             <br />
-                <p style={{fontSize:'2rem'}}>Pages</p>
+                <p style={{fontSize:'2rem'}}>Seiten</p>
                 <br />
                  <ul>
                  <li><a href='/emergency_responders'>Nothelfer</a></li>
