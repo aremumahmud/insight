@@ -1,5 +1,5 @@
 import Jumbo from "./jumbo"
-import traffic from '../images/87aa725dba16e508c40ae8e55c9e9d58.jpg'
+import traffic from '../img/2.jpg'
 import Article from "./article"
 import TextImage from "./text_image"
 import VKUCard from "./vkucard"

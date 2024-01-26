@@ -1,5 +1,5 @@
 import Jumbo from "./jumbo"
-import bike from '../images/caf6a39393a7592b8afe8ea66f29c6ca.jpg'
+import bike from '../img/3.jpg'
 import Article from "./article"
 import VideoIframe from "./video_tutorial"
 import {FaMotorcycle} from 'react-icons/fa'
