@@ -9,8 +9,9 @@ export default function Spli3D() {
         width:'100%',
         
     }}>
-       <Spline scene="https://prod.spline.design/kPkTqSHe4V0VkaCE/scene.splinecode" />
-  
+{/*        <Spline scene="https://prod.spline.design/kPkTqSHe4V0VkaCE/scene.splinecode" /> */}
+{/*    <Spline scene="https://prod.spline.design/NlPUsZ1gMI44x1wP/scene.splinecode" /> */}
+    <Spline scene="https://prod.spline.design/fJO-vU4Ckjr59BNV/scene.splinecode" />
 
     </div>
      );
