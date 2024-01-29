@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 import '../css/slidetext.css';
 
-const SlideText = ({ word , style , classes }) => {
+const SlideText = ({ word , style , classes, contain_class }) => {
   const foldTextRef = useRef(null);
   
 
@@ -25,7 +25,7 @@ const SlideText = ({ word , style , classes }) => {
   }, []);
 
   return (
-    <div className="fold_container" >
+    <div className={"fold_container "+ (contain_class||'')} >
       <div className={classes} style={style?style:{}}  ref={foldTextRef}>
        {/* {word.split('').map(char=><span>{char}</span>)} */}
         {word}

@@ -1,4 +1,5 @@
 import ParallaxImage from "./cards"
+import '../css/home.css'
 import HeroSection from "./heroSection"
 import first_aid from '../img/1.jpg'
 import driving_traffic from '../images/a844739d2275fbf6dd41cc8ecd47951e.jpg'
@@ -44,7 +45,7 @@ function Home({theme}){
         <ParallaxProvider>
             <Parallax y={[60, 60]} tagOuter='figure'>
                 <HeroSection theme={theme} />
-                <div>
+                <div className="grid_me">
                     {
                     data.map(item=> <ParallaxImage theme={theme} title={item.title} tags={item.tags} image={item.image} />)
                 }

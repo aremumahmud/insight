@@ -76,7 +76,12 @@
 }
 
 .footer .pages ul li {
+    color: hsla(0, 0%, 100%, .6) !important;
     padding: .2rem;
+}
+
+.footer .pages ul li a {
+    color: hsla(0, 0%, 100%, .6) !important;
 }
 
 .footer .pages ul li:hover {

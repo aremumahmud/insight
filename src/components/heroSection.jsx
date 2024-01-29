@@ -41,7 +41,7 @@ function HeroSection({theme}){
             <span> .</span>
 
             </div> */}
-            <SlideText word={'Wir lernen, einfach und sicher zu fahren .'} style={{
+            <SlideText classes={'vary'} contain_class={'w1000'} word={'Wir lernen, einfach und sicher zu fahren .'} style={{
                 fontSize: '3rem',
                 lineHeight:'3.2rem',
                 fontWeight:'300',

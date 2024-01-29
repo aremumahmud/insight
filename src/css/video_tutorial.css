@@ -1,12 +1,22 @@
-.video_frame {
-    height: 50vh;
-    width: 90%;
-    border-radius: 1rem;
-}
-
-.frame_wrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .video_frame {
+        height: 50vh;
+        width: 90%;
+        border-radius: 1rem;
+    }
+    
+    .frame_wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @media (min-width:961px) {
+        .video_frame {
+            height: 70vh;
+            width: 50% !important;
+        }
+        .frame_wrapper {
+            display: block;
+        }
+    }

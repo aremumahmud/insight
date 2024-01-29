@@ -35,7 +35,7 @@ function FirstAid({theme}){
         <>
           <Jumbo theme={theme} image={first_aid} text={'Nothelfer'} />
           <Article theme={theme} title={data.title} content={data.content}/>
-          <VideoIframe src={'https://www.youtube.com/embed/uLESrpuNsIs?autoplay=1&amp;feature=oembed'} />
+          <VideoIframe  src={'https://www.youtube.com/embed/uLESrpuNsIs?autoplay=1&amp;feature=oembed'} />
           <Article theme={theme}  title={data2.title} content={data2.content}>
             <AppleGoogle />
             <TextImage  title={'Wichtiger Hinweis!'} image={Image3D} text={`Laden Sie das Kursmaterial nach der Installation in der App herunter. Dies geht am besten im WLAN, da dort ein höherer Datenverbrauch anfällt. Bringen Sie auch Ihre info@ucademy.ch mit`}  />

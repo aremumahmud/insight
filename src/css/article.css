@@ -68,3 +68,12 @@
 ol {
     padding-left: 0%;
 }
+
+@media (min-width:961px) {
+    .article {
+        width: 50% !important;
+    }
+    .article .article_content {
+        font-size: .975rem;
+    }
+}
